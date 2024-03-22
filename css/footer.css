@@ -1,0 +1,32 @@
+.footer {
+}
+.container {
+}
+.footer__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer__logo {
+}
+.footer__icon {
+}
+.nav__list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+.nav__item {
+}
+.nav__link {
+}
+.footer__button {
+}
+
+.footer__list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}

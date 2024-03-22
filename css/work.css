@@ -1,0 +1,41 @@
+.work {
+}
+.container {
+}
+.work__subtitle {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 156%;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  color: #fff;
+  margin-bottom: 5px;
+}
+.work__title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 125%;
+  letter-spacing: -0.03em;
+  color: #0587ff;
+  margin-bottom: 40px;
+}
+.slider {
+}
+.slider__wrapper {
+}
+.slide {
+}
+.slide__title {
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 98%;
+  color: #0587ff;
+}
+
+.slide__text {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 178%;
+  text-align: center;
+  color: #151515;
+}

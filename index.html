@@ -1,10 +1,378 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css" />
+    <title>Nethammer</title>
+    <link rel="stylesheet" href="css/index.css" />
   </head>
-  <body></body>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header__wrapper">
+          <div class="logo">
+            <img src="image/nethammer-logo.png" alt="Лого Нетхаммер" />
+          </div>
+          <div class="header__buttons">
+            <button></button>
+            <button>+ Стать клиентом</button>
+            <button><img src="image/burger.svg" alt="" /></button>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="banner">
+        <div class="container">
+          <div class="banner__wrapper">
+            <div class="banner__info">
+              <h4 class="banner__subtitle">Студия разработки - nethammer</h4>
+              <h2 class="banner__title">
+                Сложные веб - системы и программирование
+              </h2>
+              <p class="banner__text">
+                За 8 лет успешной деятельности в сфере IT программирования
+                компания реализовала более 200 проектов. Профессиональные
+                компетенции наших специалистов позволяют проектировать,
+                разрабатывать и внедрять передовые технологии в бизнес -
+                процессы клиентов.
+              </p>
+              <div class="banner__buttons">
+                <button>Написать менеджеру</button>
+                <button>Заполнить бриф</button>
+              </div>
+            </div>
+            <div class="banner__images">
+              <img class="banner__ipad" src="image/iPad.png" alt="" />
+              <img class="banner__phone" src="image/Phone.png" alt="" />
+            </div>
+          </div>
+          <div class="banner__mouse">
+            <img src="image/scroll.png" alt="" />
+          </div>
+        </div>
+      </section>
+      <section class="numbers">
+        <div class="container">
+          <div class="numbers__wrapper">
+            <ul class="numbers__list">
+              <li class="numbers__item">
+                <p class="numbers__subtitle">Лет на рынке</p>
+                <p class="numbers__count">15</p>
+              </li>
+
+              <li class="numbers__item">
+                <p class="numbers__subtitle">Проектов реализовано</p>
+                <p class="numbers__count">1100+</p>
+              </li>
+
+              <li class="numbers__item">
+                <p class="numbers__subtitle">Сотрудников</p>
+                <p class="numbers__count">50+</p>
+              </li>
+
+              <li class="numbers__item">
+                <p class="numbers__subtitle">Проектов реализовано</p>
+                <p class="numbers__count">1100+</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="services">
+        <div class="container">
+          <div class="services__wrapper">
+            <h3 class="section__title">Услуги</h3>
+            <h2 class="services__title">Что мы предлагаем?</h2>
+            <ul class="services__list">
+              <li class="services__item">Сложная разработка</li>
+              <li class="services__item">Разработка и внедрение</li>
+              <li class="services__item">Интеграция с системами</li>
+              <li class="services__item">Ведение готового продукта</li>
+              <li class="services__item">Развитие проектов и выпуск MVP</li>
+              <li class="services__item">Разработка сайтов любой сложности</li>
+              <li class="services__item">
+                Мобильные приложения на базе систем IOS или Android
+              </li>
+              <li class="services__item">
+                Маркетинговая аналитика, продвижение
+              </li>
+            </ul>
+            <div class="services__info-wrapper">
+              <div class="services__info info">
+                <h3 class="info__title">Сложная разработка</h3>
+                <p class="info__text">
+                  Высокий уровень вовлечения представителей целевой аудитории
+                  является четким доказательством простого факта: реализация
+                  намеченных плановых заданий представляет собой интересный
+                  эксперимент проверки приоретизации разума над эмоциями.
+                </p>
+                <button><a href="">Подключиться</a></button>
+              </div>
+              <img
+                class="services__image"
+                src="image/services-img.jpg"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="cases">
+        <div class="container">
+          <h3 class="cases__subtitle">наши</h3>
+          <h2 class="cases__title">Кейсы</h2>
+          <div class="cases__list">
+            <li class="cases__item">
+              <img class="cases__image" src="image/case.jpg" alt="" />
+              <div class="cese__content">
+                <p>Название компании</p>
+                <p>стек</p>
+                <p>Краткое описание проекта</p>
+                <button><a href="">Смотреть сайт</a></button>
+              </div>
+            </li>
+          </div>
+        </div>
+      </section>
+
+      <section class="work">
+        <div class="container">
+          <h3 class="work__subtitle">Как мы работаем</h3>
+          <h2 class="work__title">Модели работы</h2>
+          <div class="slider">
+            <div class="slider__wrapper">
+              <div class="slide">
+                <img src="" alt="" />
+                <h3 class="slide__title">Fix Price</h3>
+                <p class="slide__text">
+                  Подходит для простых проектов с чётко определённым набором
+                  задач, которые не будут меняться в процессе работы.
+                </p>
+                <button>Подробнее</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="stages">
+        <div class="container stages__box">
+          <div class="stages__wrapper">
+            <h3 class="stages__subtitle">Этапы сотрудничества</h3>
+            <h2 class="stages__title">
+              Погружаем в задачи компании с первой встречи
+            </h2>
+            <button class="stages__button">Обсудить сотрудничество</button>
+            <img src="image/stages.png" alt="" />
+          </div>
+          <ul class="stages__list">
+            <li class="stages__item stage">
+              <div class="stage__wrapper">
+                <span class="stage__number">01</span>
+                <p class="stage__title">Консультация</p>
+              </div>
+              <p class="stage__text">
+                Встречаемся в офисе или проводим онлайн-конференцию, где узнаём,
+                с какими проблемами сталкивается бизнес
+              </p>
+            </li>
+
+            <li class="stages__item stage">
+              <div>
+                <span class="stage__number">02</span>
+                <p class="stage__title">Изучение задачи</p>
+              </div>
+              <p class="stage__text">
+                Проводим глубокий анализ компании и задач, подбираем решения,
+                которые закроют задачи компании
+              </p>
+            </li>
+
+            <li class="stages__item stage">
+              <div>
+                <span class="stage__number">03</span>
+                <p class="stage__title">Согласование</p>
+              </div>
+              <p class="stage__text">
+                Связываемся с заказчиком, презентуем решения и выбираем
+                подходящую разработку
+              </p>
+            </li>
+
+            <li class="stages__item stage">
+              <div>
+                <span class="stage__number">04</span>
+                <p class="stage__title">Разработка и тестирование</p>
+              </div>
+              <p class="stage__text">
+                Создаём решение и проводим пилотную работу инструмента, чтобы
+                убедиться в его эффективности
+              </p>
+            </li>
+
+            <li class="stages__item stage">
+              <div>
+                <span class="stage__number">05</span>
+                <p class="stage__title">Внедрение</p>
+              </div>
+              <p class="stage__text">
+                Интегрируем разработку в бизнес- процессы заказчика, обучаем
+                команду использованию системы
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="clients">
+        <div class="container">
+          <h3 class="clients__subtitle">Наши клиенты</h3>
+          <h2 class="clients__title">
+            Компании, которые уже сотрудничают с нами
+          </h2>
+          <ul class="clients__list">
+            <li class="clients__item">
+              <img class="clients__logo" src="image/temper-logo.png" alt="" />
+            </li>
+
+            <li class="clients__item">
+              <img class="clients__logo" src="image/temper-logo.png" alt="" />
+            </li>
+
+            <li class="clients__item">
+              <img class="clients__logo" src="image/temper-logo.png" alt="" />
+            </li>
+
+            <li class="clients__item">
+              <img class="clients__logo" src="image/temper-logo.png" alt="" />
+            </li>
+
+            <li class="clients__item">
+              <img class="clients__logo" src="image/temper-logo.png" alt="" />
+            </li>
+
+            <li class="clients__item">
+              <img class="clients__logo" src="image/temper-logo.png" alt="" />
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="contact">
+        <div class="container">
+          <h2 class="contact__title">
+            Переходите на сторону бизнеса будущего с nethammer
+          </h2>
+          <div class="contact__wrapper">
+            <p class="contact__text">
+              Заполните форму, мы свяжемся и обсудим детали решений в ваши
+              внутренние процессы
+            </p>
+            <form action="">
+              <input type="text" placeholder="Ваше имя" />
+              <input type="tel" />
+              <input type="checkbox" id="agree" /><label for="agree"
+                >Я соглашаюсь с политикой конфиденциальности</label
+              >
+              <button>Отправить</button>
+            </form>
+          </div>
+          <div class="contact__info">
+            <p><a href="">+7 (352) 250-93-83</a></p>
+            <p><a href="">foxis@nethammer.ru</a></p>
+            <div class="contact__links">
+              <a class="contact__link" href="">
+                <svg
+                  width="40"
+                  height="40"
+                  viewBox="0 0 40 40"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g clip-path="url(#clip0_1_2453)">
+                    <path
+                      d="M20 0.800049C9.396 0.800049 0.799999 9.39605 0.799999 20C0.799999 30.604 9.396 39.2001 20 39.2001C30.604 39.2001 39.2 30.604 39.2 20C39.2 9.39605 30.604 0.800049 20 0.800049ZM27.384 22.462C27.384 22.462 29.082 24.1381 29.5 24.916C29.512 24.9321 29.518 24.948 29.522 24.956C29.692 25.242 29.732 25.464 29.648 25.63C29.508 25.906 29.028 26.0421 28.864 26.0541H25.864C25.656 26.0541 25.22 26 24.692 25.636C24.286 25.352 23.886 24.886 23.496 24.432C22.914 23.756 22.41 23.1721 21.902 23.1721C21.8375 23.1719 21.7733 23.1821 21.712 23.202C21.328 23.326 20.836 23.8741 20.836 25.334C20.836 25.79 20.476 26.052 20.222 26.052H18.848C18.38 26.052 15.942 25.8881 13.782 23.6101C11.138 20.82 8.758 15.224 8.738 15.172C8.588 14.81 8.898 14.616 9.236 14.616H12.266C12.67 14.616 12.802 14.862 12.894 15.08C13.002 15.334 13.398 16.344 14.048 17.48C15.102 19.332 15.748 20.084 16.266 20.084C16.3631 20.0829 16.4585 20.0582 16.544 20.012C17.22 19.636 17.094 17.226 17.064 16.726C17.064 16.632 17.062 15.648 16.716 15.176C16.468 14.834 16.046 14.704 15.79 14.656C15.8936 14.5131 16.0301 14.3971 16.188 14.318C16.652 14.086 17.488 14.052 18.318 14.052H18.78C19.68 14.064 19.912 14.122 20.238 14.204C20.898 14.362 20.912 14.788 20.854 16.246C20.836 16.66 20.818 17.128 20.818 17.68C20.818 17.8001 20.812 17.928 20.812 18.064C20.792 18.806 20.768 19.648 21.292 19.994C21.3603 20.0369 21.4393 20.0598 21.52 20.06C21.702 20.06 22.25 20.06 23.734 17.514C24.1917 16.6946 24.5894 15.843 24.924 14.966C24.954 14.914 25.042 14.754 25.146 14.692C25.2228 14.6529 25.3079 14.633 25.394 14.634H28.956C29.344 14.634 29.61 14.692 29.66 14.842C29.748 15.08 29.644 15.806 28.018 18.008L27.292 18.966C25.818 20.898 25.818 20.996 27.384 22.462Z"
+                      fill="#0587FF"
+                    />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_1_2453">
+                      <rect width="40" height="40" fill="white" />
+                    </clipPath>
+                  </defs>
+                </svg>
+              </a>
+              <a class="contact__link" href="">
+                <svg
+                  width="39"
+                  height="40"
+                  viewBox="0 0 39 40"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g clip-path="url(#clip0_1_2455)">
+                    <path
+                      d="M19.3778 0.625C8.67465 0.625 0.0027771 9.29688 0.0027771 20C0.0027771 30.7031 8.67465 39.375 19.3778 39.375C30.0809 39.375 38.7528 30.7031 38.7528 20C38.7528 9.29688 30.0809 0.625 19.3778 0.625ZM28.8934 13.8984L25.7137 28.8828C25.4793 29.9453 24.8465 30.2031 23.9637 29.7031L19.12 26.1328L16.784 28.3828C16.5262 28.6406 16.3075 28.8594 15.8075 28.8594L16.1512 23.9297L25.1278 15.8203C25.5184 15.4766 25.0418 15.2812 24.5262 15.625L13.4325 22.6094L8.65121 21.1172C7.61215 20.7891 7.58871 20.0781 8.86996 19.5781L27.5497 12.375C28.4168 12.0625 29.1747 12.5859 28.8934 13.8984Z"
+                      fill="#0587FF"
+                    />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_1_2455">
+                      <rect width="38.7556" height="40" fill="white" />
+                    </clipPath>
+                  </defs>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__wrapper">
+          <div class="footer__logo">
+            <img
+              class="footer__icon"
+              src="image/nethammer-white-logo.png"
+              alt=""
+            />
+          </div>
+          <ul class="nav__list">
+            <li class="nav__item"><a class="nav__link" href="">Главная</a></li>
+            <li class="nav__item">
+              <a class="nav__link" href="">Разработка 1С</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="">О компании</a>
+            </li>
+            <li class="nav__item"><a class="nav__link" href="">Продукты</a></li>
+            <li class="nav__item"><a class="nav__link" href="">Услуги</a></li>
+            <li class="nav__item"><a class="nav__link" href="">Контакты</a></li>
+          </ul>
+          <button class="footer__button">Стать клиентом</button>
+        </div>
+        <svg
+          width="1270"
+          height="2"
+          viewBox="0 0 1270 2"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path d="M0 1L1270 1.00011" stroke="#0587FF" stroke-opacity="0.5" />
+        </svg>
+        <ul class="footer__list">
+          <li >Кейсы</li>
+          <li>Вакансии</li>
+          <li>Стажировка</li>
+          <li>Отзывы</li>
+          <li>Новости</li>
+          <li>SLA</li>
+        </ul>
+        <p>nethammer.ru © 2014-2024</p>
+      </div>
+    </footer>
+  </body>
 </html>
