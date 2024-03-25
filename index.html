@@ -3,6 +3,36 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="preload"
+      href="fonts/Gilroy-Regular.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="fonts/Gilroy-Semibold.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+
+    <link
+      rel="preload"
+      href="fonts/Gilroy-Medium.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+
+    <link
+      rel="preload"
+      href="fonts/Gilroy-Bold.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
     <title>Nethammer</title>
     <link rel="stylesheet" href="css/index.css" />
   </head>
@@ -14,9 +44,11 @@
             <img src="image/nethammer-logo.png" alt="Лого Нетхаммер" />
           </div>
           <div class="header__buttons">
-            <button></button>
-            <button>+ Стать клиентом</button>
-            <button><img src="image/burger.svg" alt="" /></button>
+            <button class="header__switch"></button>
+            <button class="header__button-client">+ Стать клиентом</button>
+            <button class="header__burger">
+              <img src="image/burger.svg" alt="" />
+            </button>
           </div>
         </div>
       </div>
@@ -38,8 +70,8 @@
                 процессы клиентов.
               </p>
               <div class="banner__buttons">
-                <button>Написать менеджеру</button>
-                <button>Заполнить бриф</button>
+                <button class="banner__button">Написать менеджеру</button>
+                <button class="banner__button">Заполнить бриф</button>
               </div>
             </div>
             <div class="banner__images">
@@ -127,11 +159,31 @@
           <div class="cases__list">
             <li class="cases__item">
               <img class="cases__image" src="image/case.jpg" alt="" />
-              <div class="cese__content">
-                <p>Название компании</p>
-                <p>стек</p>
-                <p>Краткое описание проекта</p>
-                <button><a href="">Смотреть сайт</a></button>
+              <div class="ceses__content">
+                <div>
+                  <p class="case__name">Название компании</p>
+                  <p class="case__tech">стек</p>
+                </div>
+
+                <p class="case__description">Краткое описание проекта</p>
+                <button class="case__button">
+                  <a href="">Смотреть сайт</a>
+                </button>
+              </div>
+            </li>
+
+            <li class="cases__item">
+              <img class="cases__image" src="image/case.jpg" alt="" />
+              <div class="ceses__content">
+                <div>
+                  <p class="case__name">Название компании</p>
+                  <p class="case__tech">стек</p>
+                </div>
+
+                <p class="case__description">Краткое описание проекта</p>
+                <button class="case__button">
+                  <a href="">Смотреть сайт</a>
+                </button>
               </div>
             </li>
           </div>
@@ -364,7 +416,7 @@
           <path d="M0 1L1270 1.00011" stroke="#0587FF" stroke-opacity="0.5" />
         </svg>
         <ul class="footer__list">
-          <li >Кейсы</li>
+          <li>Кейсы</li>
           <li>Вакансии</li>
           <li>Стажировка</li>
           <li>Отзывы</li>

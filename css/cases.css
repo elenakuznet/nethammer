@@ -1,0 +1,82 @@
+.cases {
+  margin-bottom: 80px;
+}
+.container {
+}
+.cases__subtitle {
+  color: rgb(5, 135, 255);
+  font-family: Gilroy;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 25px;
+  letter-spacing: -3%;
+  text-align: left;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+}
+.cases__title {
+  color: rgb(255, 255, 255);
+  font-family: Gilroy;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 45px;
+  letter-spacing: -3%;
+  text-align: left;
+  margin-bottom: 40px;
+}
+.cases__list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 21px;
+  list-style: none;
+}
+.cases__item {
+}
+.cases__image {
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+.ceses__content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.case__name {
+  color: rgb(255, 255, 255);
+  font-family: Gilroy;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 22px;
+  letter-spacing: -3%;
+}
+.case__tech {
+  color: rgb(255, 255, 255);
+  font-family: Gilroy;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: -3%;
+  text-align: left;
+  text-transform: uppercase;
+}
+.case__description {
+  color: rgb(255, 255, 255);
+  font-family: Gilroy;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: -3%;
+  text-align: left;
+}
+.case__button {
+  border-radius: 50px;
+  background: rgb(5, 135, 255);
+  border: 0;
+  color: rgb(255, 255, 255);
+  font-family: Gilroy;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 158.7%;
+  letter-spacing: -3%;
+  text-align: left;
+}

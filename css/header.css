@@ -1,3 +1,6 @@
+.header {
+  padding: 30px 0;
+}
 .header__wrapper {
   display: flex;
   justify-content: space-between;
@@ -5,4 +8,41 @@
 .logo {
 }
 .header__buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+}
+
+.header__switch {
+  border-radius: 40px;
+  background: rgb(255, 255, 255);
+  width: 84.81px;
+  height: 43px;
+  border: none;
+}
+
+.header__button-client {
+  border-radius: 40px;
+  background: rgb(255, 255, 255);
+  padding: 7px 18px;
+  color: rgb(0, 6, 35);
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 158.7%;
+  letter-spacing: -3%;
+  text-align: right;
+  border: 0;
+  cursor: pointer;
+}
+
+.header__burger {
+  border-radius: 50px;
+  background: rgb(255, 255, 255);
+  width: 43px;
+  height: 43px;
+  border: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }

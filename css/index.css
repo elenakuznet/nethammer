@@ -1,8 +1,10 @@
+@import "normalize.css";
 @import "global.css";
 @import "header.css";
 @import "banner.css";
 @import "numbers.css";
 @import "services.css";
+@import "cases.css";
 @import "work.css";
 @import "stage.css";
 @import "clients.css";
