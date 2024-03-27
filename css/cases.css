@@ -26,9 +26,15 @@
 }
 .cases__list {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  /* grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr; */
   gap: 21px;
   list-style: none;
+  grid-auto-flow: row;
+}
+
+.cases__item-full {
+  grid-column: span 2;
 }
 .cases__item {
 }
@@ -36,7 +42,7 @@
   border-radius: 10px;
   margin-bottom: 10px;
 }
-.ceses__content {
+.cases__content {
   display: flex;
   justify-content: space-between;
 }

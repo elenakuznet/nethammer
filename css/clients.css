@@ -4,13 +4,30 @@
 .container {
 }
 .clients__subtitle {
+  color: rgb(5, 135, 255);
+  font-family: Gilroy;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 25px;
+  letter-spacing: -3%;
+  text-align: left;
 }
+
 .clients__title {
+  color: rgb(255, 255, 255);
+  font-family: Gilroy;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 45px;
+  letter-spacing: -3%;
+  margin-bottom: 40px;
 }
+
 .clients__list {
   display: flex;
   justify-content: space-between;
 }
+
 .clients__item {
   border-radius: 22px;
   width: 190px;
@@ -20,5 +37,6 @@
   align-items: center;
   justify-content: center;
 }
+
 .clients__logo {
 }

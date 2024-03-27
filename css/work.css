@@ -1,7 +1,10 @@
 .work {
+  margin-bottom: 80px;
 }
+
 .container {
 }
+
 .work__subtitle {
   font-weight: 500;
   font-size: 16px;
@@ -11,6 +14,7 @@
   color: #fff;
   margin-bottom: 5px;
 }
+
 .work__title {
   font-weight: 700;
   font-size: 36px;
@@ -19,12 +23,30 @@
   color: #0587ff;
   margin-bottom: 40px;
 }
+
 .slider {
 }
+
 .slider__wrapper {
 }
+
 .slide {
+  border-radius: 10px;
+  background: rgb(233, 239, 255);
+  width: 390px;
+  height: 410px;
+  padding: 28px 20px 32px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
 }
+
+.slide__image {
+  width: 115px;
+  height: 115px;
+}
+
 .slide__title {
   font-weight: 600;
   font-size: 40px;
@@ -38,4 +60,16 @@
   line-height: 178%;
   text-align: center;
   color: #151515;
+}
+
+.slide__button {
+  border-radius: 40px;
+  background: rgb(5, 135, 255);
+  padding: 7px 20px 7px 20px;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 158.7%;
+  letter-spacing: -3%;
+  color: rgb(255, 255, 255);
+  border: none;
 }
