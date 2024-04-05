@@ -1,5 +1,18 @@
 .numbers {
   margin-bottom: 80px;
+  position: relative;
+  /* background-image: url("/image/numbers-bg.png");
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 10; */
+}
+
+.numbers-backround {
+  position: absolute;
+  top: 650px;
+  /* width: 660px;
+  height: 767px; */
 }
 
 .numbers__wrapper {

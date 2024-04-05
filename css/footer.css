@@ -1,5 +1,10 @@
 .footer {
   padding: 31px 0;
+  background: linear-gradient(
+    0deg,
+    rgba(3, 81, 153, 0.3) 0%,
+    rgba(0, 6, 35, 0.3) 100%
+  );
 }
 
 .footer__wrapper {

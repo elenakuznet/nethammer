@@ -2,6 +2,13 @@
   margin-bottom: 80px;
 }
 
+.background-image-second {
+  position: absolute;
+  right: 0;
+  top: 750px;
+  z-index: -1;
+}
+
 .services__wrapper {
 }
 .section__title {
