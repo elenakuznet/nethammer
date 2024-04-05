@@ -1,10 +1,12 @@
 .banner {
   height: 800px;
-  background: url("image/header-vector.png");
-  background-position: bottom;
-  background-size: cover;
+  background-image: url("/image/banner__bg.png");
+  background-position: bottom center;
+  background-size: contain;
+  background-repeat: no-repeat;
   z-index: 20;
   position: relative;
+  margin-bottom: 40px;
 }
 
 .banner__wrapper {
@@ -65,5 +67,6 @@
 .banner__mouse {
   position: absolute;
   left: 50%;
+  bottom: 0;
   transform: translateX(-50%);
 }
