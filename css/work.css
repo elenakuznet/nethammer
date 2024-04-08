@@ -22,6 +22,7 @@
   letter-spacing: -0.03em;
   color: #0587ff;
   margin-bottom: 40px;
+  position: relative;
 }
 
 .slider {
@@ -72,4 +73,41 @@
   letter-spacing: -3%;
   color: rgb(255, 255, 255);
   border: none;
+}
+
+.swiper {
+  padding: 30px 0;
+}
+
+.button-left,
+.button-right {
+  position: absolute;
+  width: 35px;
+  height: 35px;
+  top: -81px;
+  cursor: pointer;
+  z-index: 10;
+  display: flex;
+}
+
+.button-left {
+  right: 55px;
+}
+
+.button-right {
+  right: 0;
+}
+
+.slider__wrapper {
+  position: relative;
+}
+
+.swiper-slide {
+  transition: all 0.5s ease;
+  /* padding: 40px 0; */
+}
+
+.swiper-slide-active {
+  transform: scale(1.4);
+  transform: translateZ(10px);
 }

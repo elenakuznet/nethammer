@@ -34,11 +34,11 @@
       crossorigin
     />
     <title>Nethammer</title>
-    <link rel="stylesheet" href="css/index.css" />
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
+    <link rel="stylesheet" href="css/index.css" />
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   </head>
@@ -192,7 +192,8 @@
 
                 <p class="case__description">Краткое описание проекта</p>
                 <button class="button case__button">
-                  <a href="">Смотреть сайт</a>
+                  Смотреть сайт
+                  <img class="case__icon" src="image/arrow-right.svg" alt="" />
                 </button>
               </div>
             </li>
@@ -206,8 +207,9 @@
                 </div>
 
                 <p class="case__description">Краткое описание проекта</p>
-                <button class="case__button">
-                  <a href="">Смотреть сайт</a>
+                <button class="button case__button">
+                  Смотреть сайт
+                  <img class="case__icon" src="image/arrow-right.svg" alt="" />
                 </button>
               </div>
             </li>
@@ -222,22 +224,8 @@
 
                 <p class="case__description">Краткое описание проекта</p>
                 <button class="button case__button">
-                  <a href="">Смотреть сайт</a>
-                </button>
-              </div>
-            </li>
-
-            <li class="cases__item">
-              <img class="cases__image" src="image/case.jpg" alt="" />
-              <div class="cases__content">
-                <div>
-                  <p class="case__name">Название компании</p>
-                  <p class="case__tech">стек</p>
-                </div>
-
-                <p class="case__description">Краткое описание проекта</p>
-                <button class="case__button">
-                  <a href="">Смотреть сайт</a>
+                  Смотреть сайт
+                  <img class="case__icon" src="image/arrow-right.svg" alt="" />
                 </button>
               </div>
             </li>
@@ -252,7 +240,24 @@
 
                 <p class="case__description">Краткое описание проекта</p>
                 <button class="button case__button">
-                  <a href="">Смотреть сайт</a>
+                  Смотреть сайт
+                  <img class="case__icon" src="image/arrow-right.svg" alt="" />
+                </button>
+              </div>
+            </li>
+
+            <li class="cases__item">
+              <img class="cases__image" src="image/case.jpg" alt="" />
+              <div class="cases__content">
+                <div>
+                  <p class="case__name">Название компании</p>
+                  <p class="case__tech">стек</p>
+                </div>
+
+                <p class="case__description">Краткое описание проекта</p>
+                <button class="button case__button">
+                  Смотреть сайт
+                  <img class="case__icon" src="image/arrow-right.svg" alt="" />
                 </button>
               </div>
             </li>
@@ -272,14 +277,64 @@
           <h2 class="work__title">Модели работы</h2>
           <div class="slider">
             <div class="slider__wrapper">
-              <div class="slide">
-                <img class="slide__image" src="image/work-image.png" alt="" />
-                <h3 class="slide__title">Fix Price</h3>
-                <p class="slide__text">
-                  Подходит для простых проектов с чётко определённым набором
-                  задач, которые не будут меняться в процессе работы.
-                </p>
-                <button class="button slide__button">Подробнее</button>
+              <div class="swiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="slide">
+                      <img
+                        class="slide__image"
+                        src="image/work-image.png"
+                        alt=""
+                      />
+                      <h3 class="slide__title">Fix Price</h3>
+                      <p class="slide__text">
+                        Подходит для простых проектов с чётко определённым
+                        набором задач, которые не будут меняться в процессе
+                        работы.
+                      </p>
+                      <button class="button slide__button">Подробнее</button>
+                    </div>
+                    Slide 1
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="slide">
+                      <img
+                        class="slide__image"
+                        src="image/work-image.png"
+                        alt=""
+                      />
+                      <h3 class="slide__title">Retainer</h3>
+                      <p class="slide__text">
+                        Подходит для долгосрочных проектов. Собираем команду в
+                        помощь вашему IT-менеджеру.
+                      </p>
+                      <button class="button slide__button">Подробнее</button>
+                    </div>
+                    Slide 2
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="slide">
+                      <img
+                        class="slide__image"
+                        src="image/work-image.png"
+                        alt=""
+                      />
+                      <h3 class="slide__title">Time & Material</h3>
+                      <p class="slide__text">
+                        Подходит для долгосрочных проектов. Собираем команду в
+                        помощь вашему IT-менеджеру.
+                      </p>
+                      <button class="button slide__button">Подробнее</button>
+                    </div>
+                    Slide 3
+                  </div>
+                </div>
+              </div>
+              <div class="button-right">
+                <img src="image/arrow-right-swiper.svg" alt="" />
+              </div>
+              <div class="button-left">
+                <img src="image/arrow-left.svg" alt="" />
               </div>
             </div>
           </div>
@@ -531,6 +586,6 @@
         <p class="footer__copyright"><a>nethammer.ru</a> © 2014-2024</p>
       </div>
     </footer>
-    <script src="index.js"></script>
+    <script src="js/index.js"></script>
   </body>
 </html>

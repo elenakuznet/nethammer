@@ -1,3 +1,10 @@
+.background-image-second {
+  position: absolute;
+  right: 0;
+  top: 750px;
+  z-index: -1;
+}
+
 .background-image-third {
   position: absolute;
   top: 1507px;
