@@ -21,9 +21,11 @@
 .contact__title--blue {
   color: rgb(5, 135, 255);
 }
+
 .contact__wrapper {
   max-width: 508px;
 }
+
 .contact__text {
   color: rgb(255, 255, 255);
   font-family: Gilroy;
@@ -59,6 +61,7 @@
   height: 50px;
   padding: 14px 20px;
 }
+
 .contact__agreement {
   border: 1px solid #fff;
   border-radius: 5px;
@@ -89,6 +92,7 @@
   letter-spacing: -0.03em;
   color: #e9efff;
 }
+
 .contact__info {
   font-weight: 400;
   font-size: 30px;
@@ -98,7 +102,11 @@
   flex-direction: column;
   gap: 20px;
 }
+
 .contact__links {
+  display: flex;
+  gap: 20px;
 }
+
 .contact__link {
 }
