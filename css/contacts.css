@@ -13,7 +13,7 @@
   line-height: 55px;
   letter-spacing: -2px;
   text-align: left;
-  color: rgb(255, 255, 255);
+  /* color: rgb(255, 255, 255); */
   max-width: 742px;
   margin-bottom: 40px;
 }
@@ -27,7 +27,7 @@
 }
 
 .contact__text {
-  color: rgb(255, 255, 255);
+  /* color: rgb(255, 255, 255); */
   font-family: Gilroy;
   font-size: 21px;
   font-weight: 400;
@@ -74,7 +74,7 @@
 .contact__label {
   font-weight: 400;
   font-size: 14px;
-  color: #fff;
+  /* color: #fff; */
 }
 
 .contact__button {
@@ -97,7 +97,7 @@
   font-weight: 400;
   font-size: 30px;
   line-height: 90%;
-  color: #fff;
+  /* color: #fff; */
   display: flex;
   flex-direction: column;
   gap: 20px;

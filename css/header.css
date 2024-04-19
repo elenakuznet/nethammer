@@ -24,11 +24,32 @@
 }
 
 .header__switch {
+  position: relative;
   border-radius: 40px;
   background: rgb(255, 255, 255);
   width: 84.81px;
   height: 43px;
   border: none;
+}
+
+.header__switch::before {
+  position: absolute;
+  content: "";
+  height: 33px;
+  width: 33px;
+  background-color: #0587ff;
+  border-radius: 50%;
+  /* top: 13%;
+  left: 54%;
+  transform: translateX(-90%); */
+  top: 50%;
+  left: 44px;
+  transform: translateY(-50%);
+  transition: all 0.3s ease-in-out;
+}
+
+.header__switch.active::before {
+  left: calc(100% - 33px - 44px);
 }
 
 .header__button-client {

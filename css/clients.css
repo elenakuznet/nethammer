@@ -1,8 +1,7 @@
 .clients {
   margin-bottom: 80px;
 }
-.container {
-}
+
 .clients__subtitle {
   color: rgb(5, 135, 255);
   font-family: Gilroy;
@@ -14,7 +13,7 @@
 }
 
 .clients__title {
-  color: rgb(255, 255, 255);
+  /* color: rgb(255, 255, 255); */
   font-family: Gilroy;
   font-size: 36px;
   font-weight: 700;

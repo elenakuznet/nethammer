@@ -7,6 +7,14 @@
   );
 }
 
+.footer.light-bg {
+  background: linear-gradient(
+    0deg,
+    rgba(155, 194, 255, 0.6) 0%,
+    rgba(255, 255, 255, 0.6) 100%
+  );
+}
+
 .footer__wrapper {
   display: flex;
   justify-content: space-between;
@@ -30,7 +38,7 @@
   line-height: 144%;
   letter-spacing: -0.04em;
   text-transform: uppercase;
-  color: #fff;
+  /* color: #fff; */
 }
 .footer__button {
   border-radius: 40px;
@@ -59,7 +67,7 @@
   font-size: 18px;
   line-height: 144%;
   letter-spacing: -0.04em;
-  color: #fff;
+  /* color: #fff; */
 }
 
 .footer__copyright {
@@ -67,6 +75,6 @@
   font-size: 18px;
   line-height: 150%;
   text-align: right;
-  color: #fff;
+  /* color: #fff; */
   text-align: center;
 }

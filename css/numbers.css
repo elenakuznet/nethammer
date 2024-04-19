@@ -17,23 +17,27 @@
 
 .numbers__wrapper {
 }
+
 .numbers__list {
   display: flex;
   justify-content: space-between;
 }
+
 .numbers__item {
 }
+
 .numbers__subtitle {
   font-weight: 600;
   font-size: 20px;
   line-height: 100%;
-  color: #fff;
+  /* color: #fff; */
   text-decoration: underline;
   text-underline-offset: 20px;
   /* Толщина подчёркивания — 4 пикселя */
   text-decoration-thickness: 2px;
   margin-bottom: 45px;
 }
+
 .numbers__count {
   font-weight: 700;
   font-size: 90px;
