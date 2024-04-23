@@ -13,6 +13,7 @@
 
 .banner__wrapper {
   display: flex;
+  position: relative;
 }
 
 .banner__info {
@@ -62,16 +63,65 @@
 }
 
 .banner__images {
+  position: absolute;
+  top: 0;
+  /* right: 20%; */
+  /* right: 16%; */
+  right: 7%;
 }
 
 .banner__ipad {
+  background-image: url(../image/iPad.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 887px;
+  height: 662px;
+  /* width: 781px;
+  height: 662px; */
+  display: block;
   position: relative;
+  /* background-image: url(../image/iPad.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 755px;
+  height: 542px;
+  position: relative; */
+
+  /* width: 752px;
+  height: 542px; */
+}
+
+.play {
+  position: absolute;
+  top: 35%;
+  left: 45%;
+}
+
+.play--phone {
+  position: absolute;
+  top: 35%;
+  left: 45%;
 }
 
 .banner__phone {
+  background-image: url(../image/Phone.png);
+  width: 325px;
+  height: 491px;
   position: absolute;
-  right: 0;
-  top: 200px;
+  top: 21%;
+  background-size: contain;
+  left: 80%;
+  background-repeat: no-repeat;
+  /* position: relative; */
+
+  /* background-image: url("../image/Phone.png");
+  width: 224px;
+  height: 458px; */
+  /* position: absolute; */
+  /* top: 23%;
+  left: 60%; */
+  /* top: 18%;
+  left: 78%; */
 }
 
 .banner__mouse {

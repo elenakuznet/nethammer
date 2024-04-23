@@ -14,8 +14,10 @@
   display: flex;
   justify-content: space-between;
 }
+
 .logo {
 }
+
 .header__buttons {
   display: flex;
   justify-content: space-between;
