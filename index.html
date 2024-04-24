@@ -462,18 +462,30 @@
                 Заполните форму, мы свяжемся и обсудим детали решений в ваши
                 внутренние процессы
               </p>
-              <form class="contact__form" action="">
+              <form
+                class="contact__form"
+                action="https://jsonplaceholder.typicode.com/posts"
+                id="form"
+                method="POST"
+              >
                 <input
                   class="contact__name"
                   type="text"
+                  name="name"
                   placeholder="Ваше имя"
                 />
-                <input class="contact__tel" type="tel" />
+                <input
+                  class="contact__tel tel-input"
+                  type="tel"
+                  name="tel"
+                  placeholder="+7 (999) 999-99-99"
+                />
                 <label for="agree" class="contact__label"
                   ><input
                     class="contact__agreement"
                     type="checkbox"
                     id="agree"
+                    name="agree"
                   />Я соглашаюсь с политикой конфиденциальности
                 </label>
                 <button class="button contact__button">
@@ -627,6 +639,7 @@
         <p class="footer__copyright"><a>nethammer.ru</a> © 2014-2024</p>
       </div>
     </footer>
+    <script src="js/inputmask.min.js"></script>
     <script src="js/index.js"></script>
   </body>
 </html>

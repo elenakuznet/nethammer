@@ -38,3 +38,39 @@ const swiper = new Swiper(".swiper", {
     el: ".swiper-scrollbar",
   },
 });
+
+// Маска
+
+const inputTel = document.querySelectorAll(".tel-input");
+const telMask = new Inputmask("+7 (999)-999-99-99");
+
+telMask.mask(inputTel);
+
+// Форма
+
+const form = document.getElementById("form");
+
+function handleFormSubmit(event) {
+  event.preventDefault();
+
+  // Получаем данные из формы
+
+  const formData = new FormData(form);
+  console.log(formData);
+
+  // Отправляем данные на сервер
+  fetch("https://jsonplaceholder.typicode.com/posts", {
+    method: "POST",
+    body: formData,
+  })
+    .then((response) => {
+      // Обрабатываем ответ от сервера
+      console.log(response);
+    })
+    .catch((error) => {
+      // Обрабатываем ошибку
+      console.error(error);
+    });
+}
+
+form.addEventListener("submit", handleFormSubmit);
