@@ -18,10 +18,7 @@ toggle.addEventListener("click", () => {
 
 // Swiper
 
-const swiper = new Swiper(".swiper", {
-  // Optional parameters
-  // slidesPerView: 3,
-  // loop: true,
+new Swiper(".swiper", {
   spaceBetween: 20,
   slidesPerView: 3,
   centeredSlides: true,

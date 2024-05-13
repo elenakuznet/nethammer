@@ -100,7 +100,19 @@
   margin-bottom: 30px;
 }
 
-/* .cases__list {
+.cases__list--page {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-} */
+  margin-bottom: 30px;
+}
+
+.cases__item--page {
+  position: relative;
+}
+
+.case__button--page {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  padding: 5px 5px 5px 12px;
+}
