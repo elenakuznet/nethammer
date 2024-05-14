@@ -4,22 +4,22 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="/css/index.css" />
   </head>
   <body>
     <header class="header">
       <div class="container">
         <div class="header__wrapper">
-          <div class="logo">
-            <img src="image/nethammer-logo.png" alt="Лого Нетхаммер" />
-          </div>
+          <a href="/index.html" class="logo">
+            <img src="/image/nethammer-logo.png" alt="Лого Нетхаммер" />
+          </a>
           <div class="header__buttons">
             <button class="button header__switch"></button>
             <button class="button header__button-client">
               + Стать клиентом
             </button>
             <button class="button header__burger">
-              <img src="image/burger.svg" alt="" />
+              <img src="/image/burger.svg" alt="" />
             </button>
           </div>
         </div>
@@ -43,19 +43,22 @@
 
         <div class="case__title-wrapper">
           <h2 class="case__title">Название кейса</h2>
-          <button class="button case__button">Смотреть сайт</button>
+          <button class="button case__button case__button--card">
+            Смотреть сайт
+            <img class="case__icon" src="/image/arrow-right.svg" alt="" />
+          </button>
         </div>
 
-        <div>
-          <button>Категория</button>
-          <button>Услуга</button>
-          <button>CMS</button>
-          <button>Отрасль</button>
+        <div class="card__tabs">
+          <!-- <button class="card__tab">Категория</button> -->
+          <button class="card__tab">Услуга</button>
+          <button class="card__tab">CMS</button>
+          <button class="card__tab">Отрасль</button>
         </div>
       </div>
       <section>
         <div class="container">
-          <img src="image/case-big.png" alt="" />
+          <img src="/image/case-big.png" alt="" />
 
           <div class="card__wrapper">
             <div class="card__row row">
@@ -89,38 +92,47 @@
                 синтетически, объединены в целые кластеры себе подобных.
               </p>
             </div>
-          </div>
 
-          <div class="card__row row">
-            <p class="row__title">Технологии</p>
+            <div class="card__row row">
+              <p class="row__title">Технологии</p>
 
-            <p class="row__content">
-              Предварительные выводы неутешительны: экономическая повестка
-              сегодняшнего дня требует определения и уточнения экспериментов,
-              поражающих по своей масштабности и грандиозности. Идейные
-              соображения высшего порядка, а также глубокий уровень погружения
-              не даёт нам иного выбора, кроме определения прогресса
-              профессионального сообщества. Противоположная точка зрения
-              подразумевает, что стремящиеся вытеснить традиционное
-              производство, нанотехнологии, инициированные исключительно
-              синтетически, объединены в целые кластеры себе подобных.
-            </p>
-          </div>
+              <div class="row__content">
+                Предварительные выводы неутешительны: экономическая повестка
+                сегодняшнего дня требует определения и уточнения экспериментов,
+                поражающих по своей масштабности и грандиозности. Идейные
+                соображения высшего порядка, а также глубокий уровень погружения
+                не даёт нам иного выбора, кроме определения прогресса
+                профессионального сообщества. Противоположная точка зрения
+                подразумевает, что стремящиеся вытеснить традиционное
+                производство, нанотехнологии, инициированные исключительно
+                синтетически, объединены в целые кластеры себе подобных.
+                <ul class="tech__list">
+                  <li class="tech">
+                    <img src="/image/figma.svg" alt="" />Figma
+                  </li>
+                  <li class="tech"><img src="/image/php.svg" alt="" />PHP</li>
+                  <li class="tech">
+                    <img src="/image/wordpress.svg" alt="" />WordPress
+                  </li>
+                </ul>
+              </div>
+            </div>
 
-          <div class="card__row row">
-            <p class="row__title">Дизайн</p>
+            <div class="card__row row">
+              <p class="row__title">Дизайн</p>
 
-            <p class="row__content">
-              Предварительные выводы неутешительны: экономическая повестка
-              сегодняшнего дня требует определения и уточнения экспериментов,
-              поражающих по своей масштабности и грандиозности. Идейные
-              соображения высшего порядка, а также глубокий уровень погружения
-              не даёт нам иного выбора, кроме определения прогресса
-              профессионального сообщества. Противоположная точка зрения
-              подразумевает, что стремящиеся вытеснить традиционное
-              производство, нанотехнологии, инициированные исключительно
-              синтетически, объединены в целые кластеры себе подобных.
-            </p>
+              <p class="row__content">
+                Предварительные выводы неутешительны: экономическая повестка
+                сегодняшнего дня требует определения и уточнения экспериментов,
+                поражающих по своей масштабности и грандиозности. Идейные
+                соображения высшего порядка, а также глубокий уровень погружения
+                не даёт нам иного выбора, кроме определения прогресса
+                профессионального сообщества. Противоположная точка зрения
+                подразумевает, что стремящиеся вытеснить традиционное
+                производство, нанотехнологии, инициированные исключительно
+                синтетически, объединены в целые кластеры себе подобных.
+              </p>
+            </div>
           </div>
         </div>
       </section>
@@ -137,15 +149,15 @@
             <p class="team-member__title">Full-Stack разработчик</p>
             <img
               class="team-member__image"
-              src="image/team-member.png"
+              src="/image/team-member.png"
               alt=""
             />
             <div class="team-member__info">
               <p class="team-member__name">Александр</p>
               <p class="team-member__text">32+ реализованных проектов</p>
               <div class="team-member__icons">
-                <img src="image/php.svg" alt="" />
-                <img src="image/js.svg" alt="" />
+                <img src="/image/php.svg" alt="" />
+                <img src="/image/js.svg" alt="" />
               </div>
             </div>
           </div>
@@ -179,7 +191,7 @@
                   />Я соглашаюсь с политикой конфиденциальности
                 </label>
                 <button class="button contact__button">
-                  Отправить <img src="image/arrow-right.svg" alt="" />
+                  Отправить <img src="/image/arrow-right.svg" alt="" />
                 </button>
               </form>
             </div>
@@ -260,18 +272,9 @@
           </ul>
           <button class="button footer__button">Стать клиентом</button>
         </div>
-        <svg
-          width="1270"
-          height="2"
-          viewBox="0 0 1270 2"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path d="M0 1L1270 1.00011" stroke="#0587FF" stroke-opacity="0.5" />
-        </svg>
         <ul class="footer__list">
           <li class="footer__item">
-            <a class="footer__link" href="">Кейсы</a>
+            <a class="footer__link" href="/pages/cases.html">Кейсы</a>
           </li>
           <li><a class="footer__link" href="">Вакансии</a></li>
           <li><a class="footer__link" href="">Стажировка</a></li>

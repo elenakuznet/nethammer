@@ -47,9 +47,13 @@
     <header class="header">
       <div class="container">
         <div class="header__wrapper">
-          <div class="logo">
-            <img src="image/nethammer-logo.png" alt="Лого Нетхаммер" />
-          </div>
+          <a href="/" class="logo">
+            <img
+              class="header__logo"
+              src="image/nethammer-logo.png"
+              alt="Лого Нетхаммер"
+            />
+          </a>
           <div class="header__buttons">
             <button class="button header__switch"></button>
             <button class="button header__button-client">
@@ -79,7 +83,7 @@
                 процессы клиентов.
               </p>
               <div class="banner__buttons">
-                <button class="button banner__button">
+                <button class="button banner__button banner__button--manager">
                   Написать менеджеру
                 </button>
                 <button class="button banner__button">Заполнить бриф</button>
@@ -288,8 +292,6 @@
             <div class="slider__wrapper">
               <div class="swiper">
                 <div class="swiper-wrapper">
-                  
-
                   <div class="swiper-slide slide">
                     <img
                       class="slide__image"
@@ -357,7 +359,7 @@
                     </p>
                     <button class="button slide__button">Подробнее</button>
                   </div>
-                  
+
                   <div class="swiper-slide slide">
                     <img
                       class="slide__image"
@@ -395,12 +397,12 @@
           <div class="stages__wrapper">
             <h3 class="stages__subtitle">Этапы сотрудничества</h3>
             <h2 class="stages__title">
-              Погружаем в задачи компании с первой встречи
+              Погружаем в&nbsp;задачи компании с&nbsp;первой встречи
             </h2>
             <button class="button stages__button">
               Обсудить сотрудничество <img src="image/arrow-right.svg" alt="" />
             </button>
-            <img src="image/stages.png" alt="" />
+            <img class="stages__image" src="image/stages.png" alt="" />
           </div>
           <ul class="stages__list">
             <li class="stages__item stage">
@@ -640,7 +642,7 @@
         </svg> -->
         <ul class="footer__list">
           <li class="footer__item">
-            <a class="footer__link" href="cases.html">Кейсы</a>
+            <a class="footer__link" href="pages/cases.html">Кейсы</a>
           </li>
           <li class="footer__item">
             <a class="footer__link" href="#">Вакансии</a>

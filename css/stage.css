@@ -1,5 +1,6 @@
 .stages {
-  margin-bottom: 80px;
+  /* margin-bottom: 80px; */
+  margin-bottom: 86px;
 }
 
 .stages__box {
@@ -8,6 +9,7 @@
 
 .stages__wrapper {
   flex-basis: 50%;
+  position: relative;
 }
 
 .stages__subtitle {
@@ -18,6 +20,15 @@
   text-transform: uppercase;
   color: #0587ff;
   margin-bottom: 5px;
+}
+
+.stages__image {
+  width: 882px;
+  height: 727px;
+  object-fit: cover;
+  position: absolute;
+  bottom: -130px;
+  left: -18px;
 }
 
 .stages__title {
@@ -48,7 +59,7 @@
 }
 
 .stages__list {
-  flex-basis: 50%;
+  flex-basis: 52%;
   display: flex;
   flex-direction: column;
   gap: 30px;
@@ -72,7 +83,8 @@
 
 .stage {
   grid-template-columns: 200px 300px;
-  gap: 31px;
+  /* gap: 31px; */
+  gap: 45px;
 }
 
 .stage__wrapper {

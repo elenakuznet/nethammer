@@ -1,5 +1,6 @@
 .header {
-  padding: 30px 0;
+  /* padding: 30px 0; */
+  padding: 25px 0 35px 0;
 }
 
 .header__background {
@@ -16,6 +17,11 @@
 }
 
 .logo {
+}
+
+.header__logo {
+  width: 256px;
+  height: 52px;
 }
 
 .header__buttons {
@@ -36,9 +42,13 @@
 
 .header__switch::before {
   position: absolute;
-  content: "";
+  /* content: ""; */
+  content: url("/image/day-night.svg");
   height: 33px;
   width: 33px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background-color: #0587ff;
   border-radius: 50%;
   /* top: 13%;
@@ -57,7 +67,8 @@
 .header__button-client {
   border-radius: 40px;
   background: rgb(255, 255, 255);
-  padding: 7px 18px;
+  /* padding: 7px 18px; */
+  padding: 8px 13px;
   color: rgb(0, 6, 35);
   font-size: 18px;
   font-weight: 500;
