@@ -106,8 +106,13 @@
 
 .play--phone {
   position: absolute;
-  top: 35%;
-  left: 45%;
+  width: 60px;
+  height: 60px;
+  top: 48%;
+  left: 37%;
+  transform: rotate(10deg);
+  /* top: 35%;
+  left: 45%; */
 }
 
 .banner__phone {

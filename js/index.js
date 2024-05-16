@@ -16,6 +16,27 @@ toggle.addEventListener("click", () => {
   toggle.classList.toggle("active");
 });
 
+//Tabs
+
+const serviceItems = document.querySelectorAll(".services__item");
+const serviceContent = document.querySelectorAll(".services__info-wrapper");
+console.log(serviceContent);
+
+function removeAll() {
+  serviceItems.forEach((item, index) => {
+    item.classList.remove("services__item-active");
+    serviceContent[index].classList.remove("services__info-wrapper-active");
+  });
+}
+
+serviceItems.forEach((item, index) => {
+  item.addEventListener("click", () => {
+    removeAll();
+    serviceContent[index].classList.add("services__info-wrapper-active");
+    item.classList.add("services__item-active");
+  });
+});
+
 // Swiper
 
 new Swiper(".swiper", {
