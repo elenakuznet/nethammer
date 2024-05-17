@@ -1,0 +1,20 @@
+.services__info-wrapper--product {
+  margin-bottom: 30px;
+}
+
+.services__info-wrapper--product:last-child {
+  margin-bottom: 0;
+}
+
+.info__title--product {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.25;
+  letter-spacing: -0.03em;
+  color: #151515;
+  margin-bottom: 10px;
+}
+
+.info__text--product {
+  margin-bottom: 35px;
+}
