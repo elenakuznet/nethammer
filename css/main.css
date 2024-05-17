@@ -15,12 +15,14 @@
 .background-image-fourth {
   position: absolute;
   top: 2900px;
+  z-index: -1;
 }
 
 .background-image-five {
   position: absolute;
   right: 0;
   top: 3400px;
+  z-index: -1;
 }
 
 .background-image-six {

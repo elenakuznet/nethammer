@@ -1,7 +1,6 @@
 .banner {
-  /* height: 800px; */
   height: 743px;
-  /* background-image: url("/image/banner__bg.png"); */
+  background-image: url("/image/banner__bg.png");
   /* background-image: url("/image/banner-light-bg.png"); */
   background-position: bottom center;
   background-size: contain;
@@ -72,8 +71,6 @@
 .banner__images {
   position: absolute;
   top: 0;
-  /* right: 20%; */
-  /* right: 16%; */
   right: 7%;
 }
 
