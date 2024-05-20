@@ -13,7 +13,7 @@
           <a href="/index.html" class="logo">
             <img
               class="header__logo"
-              src="/image/nethammer-logo.png"
+              src="../image/header/nethammer-logo.png"
               alt="Лого Нетхаммер"
             />
           </a>
@@ -23,7 +23,7 @@
               + Стать клиентом
             </button>
             <button class="button header__burger">
-              <img src="/image/burger.svg" alt="" />
+              <img src="../image/header/burger.svg" alt="" />
             </button>
           </div>
         </div>
@@ -58,13 +58,65 @@
           </div>
 
           <div class="address">
-            <div class="adress__info"></div>
-            <div class="adress__map"></div>
+            <div class="address__info">
+              <div class="address__row">
+                <div class="address__item">
+                  <p class="address__title">Звоните</p>
+                  <a class="address__link" href="tel:83522509383"
+                    >+7 (352) 250-93-83</a
+                  >
+                </div>
+
+                <div class="address__item">
+                  <p class="address__title">Пишите в мессенджер</p>
+                  <a class="address__link" href="https://t.me/alexmekshun"
+                    >t.me/alexmekshun</a
+                  >
+                </div>
+
+                <div class="address__item">
+                  <p class="address__title">Следите за нами</p>
+                  <a class="address__link address__button" href="#">
+                    <svg
+                      width="27"
+                      height="16"
+                      viewBox="0 0 27 16"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M13.2507 15.8994H14.8878C14.8878 15.8994 15.3789 15.8148 15.6244 15.5611C15.87 15.3074 15.87 14.8 15.87 14.8C15.87 14.8 15.87 12.6011 16.8522 12.2628C17.8344 11.9246 19.144 14.4617 20.4536 15.392C21.4358 16.1531 22.1725 15.984 22.1725 15.984L25.7739 15.8994C25.7739 15.8994 27.6565 15.8148 26.7561 14.208C26.6743 14.1234 26.265 13.1086 24.0551 10.9943C21.7632 8.79542 22.0906 9.21828 24.7917 5.41257C26.4287 3.12914 27.0835 1.776 26.9198 1.09943C26.7561 0.507428 25.5284 0.67657 25.5284 0.67657H21.4358C21.4358 0.67657 21.1084 0.591999 20.9447 0.761142C20.6992 0.930285 20.6173 1.184 20.6173 1.184C20.6173 1.184 19.9625 2.96 19.144 4.48228C17.3433 7.61142 16.6066 7.78057 16.3611 7.61142C15.7063 7.18857 15.87 5.75085 15.87 4.82057C15.87 1.776 16.3611 0.507427 14.9696 0.169142C14.5604 0.0845704 14.233 0 13.087 0C11.6137 0 10.386 -3.27826e-07 9.73116 0.338285C9.24005 0.591999 8.91265 1.09943 9.1582 1.09943C9.40375 1.09943 10.0586 1.26857 10.386 1.69143C10.7134 2.45257 10.7134 3.72114 10.7134 3.72114C10.7134 3.72114 10.9589 7.35771 10.1404 7.78056C9.56746 8.11885 8.8308 7.44228 7.19378 4.56685C6.37527 3.12914 5.72047 1.43771 5.72047 1.43771C5.72047 1.43771 5.63861 1.09943 5.39306 0.930285C5.14751 0.761143 4.73826 0.67657 4.73826 0.67657H0.891265C0.891265 0.67657 0.318309 0.676571 0.0727563 0.930285C-0.0909454 1.184 0.0727563 1.60686 0.0727563 1.60686C0.0727563 1.60686 3.10124 8.87999 6.53897 12.6011C9.73116 16.1531 13.2507 15.8994 13.2507 15.8994Z"
+                        fill="white"
+                      />
+                    </svg>
+
+                    новости</a
+                  >
+                </div>
+              </div>
+              <div class="address__row">
+                <div class="address__item">
+                  <p class="address__title">Шлите письма</p>
+                  <a class="address__link" href="mailto:foxis@nethammer.ru"
+                    >foxis@nethammer.ru</a
+                  >
+                </div>
+                <div class="address__item">
+                  <p class="address__title">Шлите письма</p>
+                  <a class="address__link" href="mailto:foxis@nethammer.ru"
+                    >foxis@nethammer.ru</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="address__map"></div>
           </div>
         </div>
       </section>
 
-      <section>
+      <section class="requisites">
         <div class="container">
           <div class="cases__wrapper">
             <div>
@@ -76,6 +128,17 @@
               исключительно синтетически, преданы социально-демократической
               анафеме.
             </p>
+          </div>
+
+          <div class="requisites__top">
+            <p class="requisites__text">
+              Вы можете
+              <a class="requisites__link" href=""
+                >скачать карточку предприятия</a
+              >
+              или посмотреть все необходимые реквизиты
+            </p>
+            <img class="requisites__arrow" src="../image/Vector.png" alt="" />
           </div>
         </div>
       </section>
@@ -179,5 +242,97 @@
         </div>
       </section>
     </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__wrapper">
+          <div class="footer__logo">
+            <img
+              class="footer__icon"
+              src="/image/footer/nethammer-white-logo.png"
+              alt=""
+            />
+          </div>
+          <div class="nav">
+            <ul class="nav__list">
+              <li class="nav__item">
+                <a class="nav__link" href="#">Главная</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="#">Разработка 1С</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="../pages/products.html">Продукты</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="#">Услуги</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="#">Контакты</a>
+              </li>
+            </ul>
+          </div>
+
+          <button class="button footer__button">Стать клиентом</button>
+        </div>
+        <!-- <svg
+                width="1270"
+                height="2"
+                viewBox="0 0 1270 2"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path d="M0 1L1270 1.00011" stroke="#0587FF" stroke-opacity="0.5" />
+              </svg> -->
+        <ul class="footer__list">
+          <li class="footer__item">
+            <a class="footer__link" href="../pages/cases.html">Кейсы</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="../pages/vacancies.html"
+              >Вакансии и стажировка</a
+            >
+          </li>
+
+          <li class="footer__item">
+            <a class="footer__link" href="../pages/reviews.html">Отзывы</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="../pages/blog.html">Блог</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link footer__sla" href="#">
+              <svg
+                width="28"
+                height="27"
+                viewBox="0 0 28 27"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g clip-path="url(#clip0_8_3727)">
+                  <path
+                    d="M14 2.25V9.5625C14 9.98199 14.1563 10.3864 14.4383 10.697C14.7204 11.0075 15.1079 11.2019 15.5255 11.2421L15.6875 11.25H23V22.5C23.0002 23.0676 22.7858 23.6144 22.3998 24.0306C22.0138 24.4468 21.4848 24.7018 20.9187 24.7444L20.75 24.75H7.25C6.68235 24.7502 6.13561 24.5358 5.71938 24.1498C5.30315 23.7638 5.0482 23.2348 5.00563 22.6687L5 22.5V4.5C4.99982 3.93235 5.21421 3.38561 5.60018 2.96938C5.98616 2.55315 6.5152 2.2982 7.08125 2.25563L7.25 2.25H14ZM16.25 2.29837C16.6138 2.37561 16.9528 2.54181 17.2366 2.78213L17.375 2.90925L22.3407 7.875C22.6043 8.13838 22.7984 8.4631 22.9055 8.82L22.9505 9H16.25V2.29837Z"
+                    fill="white"
+                  />
+                </g>
+                <defs>
+                  <clippath id="clip0_8_3727">
+                    <rect
+                      width="27"
+                      height="27"
+                      fill="white"
+                      transform="translate(0.5)"
+                    />
+                  </clippath>
+                </defs>
+              </svg>
+              SLA</a
+            >
+          </li>
+        </ul>
+        <p class="footer__copyright"><a>nethammer.ru</a> © 2014-2024</p>
+      </div>
+    </footer>
+    <script src="../js/inputmask.min.js"></script>
+    <script src="../js/index.js"></script>
   </body>
 </html>
