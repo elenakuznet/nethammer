@@ -43,7 +43,7 @@
 .header__switch::before {
   position: absolute;
   /* content: ""; */
-  content: url("/image/day-night.svg");
+  content: url("../image/day-night.svg");
   height: 33px;
   width: 33px;
   display: flex;
