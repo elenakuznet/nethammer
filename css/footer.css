@@ -15,10 +15,14 @@
   );
 }
 
+.footer__container {
+  padding: 31px 30px 31px 30px;
+}
+
 .footer__wrapper {
   display: flex;
   justify-content: space-between;
-  /* align-items: center; */
+  align-items: flex-start;
   border-bottom: 2px solid rgba(5, 135, 255, 0.5);
   padding-bottom: 8px;
   margin-bottom: 16px;
@@ -54,15 +58,13 @@
 .footer__button {
   border-radius: 40px;
   padding: 9px 18px;
-  width: 149px;
-  height: 43px;
-  background: #0587ff;
   font-weight: 600;
   font-size: 16px;
-  line-height: 159%;
+  line-height: 1.587;
   letter-spacing: -0.03em;
   text-align: right;
   color: #fff;
+  background: #0587ff;
 }
 
 .footer__list {

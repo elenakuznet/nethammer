@@ -80,6 +80,7 @@ ol {
 h1,
 h2,
 h3,
+h4,
 p,
 figure,
 fieldset {
@@ -104,7 +105,7 @@ fieldset {
   margin: 0 auto;
 }
 
-.section__title {
+.section__subtitle {
   font-weight: 500;
   font-size: 16px;
   line-height: 156%;
