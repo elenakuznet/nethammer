@@ -168,7 +168,7 @@
         </div>
       </section>
 
-      <section class="contact">
+      <section class="contact" id="contact">
         <div class="container">
           <h2 class="contact__title">
             Переходите на сторону бизнеса будущего
@@ -180,22 +180,34 @@
                 Заполните форму, мы свяжемся и обсудим детали решений в ваши
                 внутренние процессы
               </p>
-              <form class="contact__form" action="">
+              <form
+                class="contact__form"
+                action="https://jsonplaceholder.typicode.com/posts"
+                id="form"
+                method="POST"
+              >
                 <input
                   class="contact__name"
                   type="text"
+                  name="name"
                   placeholder="Ваше имя"
                 />
-                <input class="contact__tel" type="tel" />
+                <input
+                  class="contact__tel tel-input"
+                  type="tel"
+                  name="tel"
+                  placeholder="+7 (999) 999-99-99"
+                />
                 <label for="agree" class="contact__label"
                   ><input
                     class="contact__agreement"
                     type="checkbox"
                     id="agree"
+                    name="agree"
                   />Я соглашаюсь с политикой конфиденциальности
                 </label>
                 <button class="button contact__button">
-                  Отправить <img src="/image/arrow-right.svg" alt="" />
+                  Отправить <img src="../image/arrow-right.svg" alt="" />
                 </button>
               </form>
             </div>
@@ -203,7 +215,11 @@
               <p><a href="tel:83522509383">+7 (352) 250-93-83</a></p>
               <p><a href="mailto:foxis@nethammer.ru">foxis@nethammer.ru</a></p>
               <div class="contact__links">
-                <a class="contact__link" href="">
+                <a
+                  class="contact__link"
+                  href="https://vk.com/nethammer"
+                  target="_blank"
+                >
                   <svg
                     width="40"
                     height="40"
@@ -224,7 +240,7 @@
                     </defs>
                   </svg>
                 </a>
-                <a class="contact__link" href="">
+                <a class="contact__link" href="" target="_blank">
                   <svg
                     width="39"
                     height="40"
