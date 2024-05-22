@@ -198,14 +198,24 @@
                   name="tel"
                   placeholder="+7 (999) 999-99-99"
                 />
-                <label for="agree" class="contact__label"
+                <!-- <label for="agree" class="contact__label"
                   ><input
                     class="contact__agreement"
                     type="checkbox"
                     id="agree"
                     name="agree"
                   />Я соглашаюсь с политикой конфиденциальности
-                </label>
+                </label> -->
+                <input
+                  type="checkbox"
+                  class="custom-checkbox"
+                  id="agree"
+                  name="agree"
+                  value="yes"
+                />
+                <label for="agree"
+                  >Я соглашаюсь с политикой конфиденциальности</label
+                >
                 <button class="button contact__button">
                   Отправить <img src="../image/arrow-right.svg" alt="" />
                 </button>
@@ -297,15 +307,6 @@
           </ul>
           <button class="button footer__button">Стать клиентом</button>
         </div>
-        <!-- <svg
-            width="1270"
-            height="2"
-            viewBox="0 0 1270 2"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path d="M0 1L1270 1.00011" stroke="#0587FF" stroke-opacity="0.5" />
-          </svg> -->
         <ul class="footer__list">
           <li class="footer__item">
             <a class="footer__link" href="./cases.html">Кейсы</a>
