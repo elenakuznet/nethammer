@@ -1,11 +1,13 @@
 .blog__filtr {
   justify-content: unset;
-  gap: 40px;
+  gap: 30px;
 }
 
 .blog__list {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 20px;
+  row-gap: 30px;
   margin-bottom: 20px;
 }
 

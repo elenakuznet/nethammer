@@ -44,11 +44,11 @@
 
 .contact__name {
   border: 0;
+  background-color: #e9efff;
   border-radius: 10px;
   width: 500px;
   height: 50px;
   padding: 14px 20px;
-  background-color: #e9efff;
 }
 
 .contact__name::placeholder {
@@ -58,7 +58,9 @@
 }
 
 .contact__tel {
+  border: 0;
   border-radius: 10px;
+  background-color: #e9efff;
   width: 500px;
   height: 50px;
   padding: 14px 20px;

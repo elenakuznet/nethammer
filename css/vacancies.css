@@ -1,5 +1,9 @@
+.job {
+  padding: 30px 0 20px 0;
+}
+
 .job__tabs {
-  margin-bottom: 60px;
+  /* margin-bottom: 60px; */
 }
 
 .job__tabs-top {
@@ -63,7 +67,7 @@
 }
 
 .bonuses {
-  margin-bottom: 60px;
+  padding: 20px 30px;
 }
 
 .bonuses__title {
@@ -98,7 +102,8 @@
   display: flex;
   align-items: center;
   gap: 20px;
-  margin-bottom: 20px;
+  /* margin-bottom: 20px; */
+  margin-bottom: 9px;
 }
 
 .bonus__image {
@@ -114,7 +119,7 @@
 }
 
 .internship {
-  margin-bottom: 40px;
+  padding: 20px 0;
 }
 
 .internship__title {
@@ -135,7 +140,7 @@
 .internship__info {
   border-radius: 10px;
   background: #e9efff;
-  padding: 20px;
+  padding: 37px 20px;
 }
 
 .internship__text {
@@ -162,7 +167,7 @@
 }
 
 .direction {
-  margin-bottom: 40px;
+  padding: 20px 0;
 }
 
 .direction__title {
@@ -171,6 +176,7 @@
   line-height: 1.25;
   letter-spacing: -0.03em;
   color: #0587ff;
+  margin-bottom: 30px;
 }
 
 .direction__wrapper {
@@ -191,10 +197,16 @@
 }
 
 .level {
-  margin-bottom: 60px;
+  padding: 20px 0;
 }
 
 .level__title {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.25;
+  letter-spacing: -0.03em;
+  color: #0587ff;
+  margin-bottom: 30px;
 }
 
 .level__list {
@@ -237,6 +249,7 @@
 
 .level__item--1 {
   background: #e9efff;
+  padding: 24px 30px 36px 30px;
 }
 
 .level__item--2 {
