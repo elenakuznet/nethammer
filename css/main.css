@@ -1,3 +1,9 @@
+.background-image-numbers {
+  position: absolute;
+  top: 550px;
+  z-index: -1;
+}
+
 .background-image-second {
   position: absolute;
   right: 0;
@@ -25,9 +31,29 @@
   z-index: -1;
 }
 
+.background-image-stages {
+  position: absolute;
+  left: 20px;
+  top: 4331px;
+  z-index: -1;
+}
+
 .background-image-six {
   position: absolute;
   right: 0;
   bottom: 0;
+  z-index: -1;
+}
+
+.background-light-first {
+  display: none;
+}
+
+body.light-mode .background-light-first {
+  display: inline;
+  position: absolute;
+  /* right: 0; */
+  left: 0;
+  top: 0;
   z-index: -1;
 }

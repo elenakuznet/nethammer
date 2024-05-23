@@ -17,7 +17,7 @@
 }
 
 .breadcrumb {
-  color: white;
+  /* color: white; */
   display: flex;
   line-height: 20px;
   margin-bottom: 30px;
@@ -31,7 +31,7 @@
 
 .breadcrumb__item + .breadcrumb__item::before {
   padding: 8px;
-  color: rgba(255, 255, 255, 0.6);
+  /* color: rgba(255, 255, 255, 0.6); */
   content: "/\00a0";
 }
 
@@ -69,6 +69,7 @@
 }
 
 .cases__select {
+  border: 0;
   border-radius: 10px;
   padding: 10px 20px;
   background: #e9efff;

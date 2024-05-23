@@ -129,6 +129,7 @@
   display: inline-flex;
   align-items: center;
   user-select: none;
+  line-height: 20px;
 }
 
 .custom-checkbox + label::before {

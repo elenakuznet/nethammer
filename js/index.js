@@ -1,19 +1,39 @@
 // Switch theme
 
-const body = document.querySelector("body");
-const toggle = document.querySelector(".header__switch");
-const footer = document.querySelector(".footer");
+document.addEventListener("DOMContentLoaded", () => {
+  const toggleButton = document.querySelector(".header__switch");
+  const logo = document.querySelector(".header__logo");
+  const footerLogo = document.querySelector(".footer__icon");
+  const burger = document.querySelector(".burger");
 
-toggle.addEventListener("click", () => {
-  body.classList.toggle("light");
-});
+  const currentTheme = localStorage.getItem("theme");
 
-toggle.addEventListener("click", () => {
-  footer.classList.toggle("light-bg");
-});
+  if (currentTheme === "light") {
+    document.body.classList.add("light-mode");
+    logo.src = "../image/header/nethammer-logo-light.png";
+    footerLogo.src = "../image/footer/nethammer-blue-logo.png";
+    burger.src = "../image/header/burger.svg";
+  }
 
-toggle.addEventListener("click", () => {
-  toggle.classList.toggle("active");
+  toggleButton.addEventListener("click", () => {
+    document.body.classList.toggle("light-mode");
+    let theme = "dark";
+    if (document.body.classList.contains("light-mode")) {
+      theme = "light";
+      logo.src = "../image/header/nethammer-logo-light.png";
+      footerLogo.src = "../image/footer/nethammer-blue-logo.png";
+      burger.src = "../image/header/burger.svg";
+    } else {
+      logo.src = "../image/header/nethammer-logo.png";
+      footerLogo.src = "../image/footer/nethammer-white-logo.png";
+      burger.src = "../image/header/burger-dark.svg";
+    }
+    localStorage.setItem("theme", theme);
+  });
+
+  toggleButton.addEventListener("click", () => {
+    toggleButton.classList.toggle("active");
+  });
 });
 
 //Tabs
