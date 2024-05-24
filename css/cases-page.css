@@ -23,19 +23,14 @@
   margin-bottom: 30px;
 }
 
-/* li + li:before {
-  padding: 8px;
-  color: black;
-  content: "/\00a0";
-} */
-
 .breadcrumb__item + .breadcrumb__item::before {
   padding: 8px;
-  /* color: rgba(255, 255, 255, 0.6); */
   content: "/\00a0";
+  color: inherit;
 }
 
-.breadcrumb__link {
+.breadcrumb__item--last {
+  color: #0587ff;
 }
 
 /* Отображение элементов списка бок о бок */
