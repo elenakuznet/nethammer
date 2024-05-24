@@ -2,32 +2,63 @@
 
 document.addEventListener("DOMContentLoaded", () => {
   const toggleButton = document.querySelector(".header__switch");
-  const logo = document.querySelector(".header__logo");
+  const mainLogo = document.querySelector(".header__logo");
   const footerLogo = document.querySelector(".footer__icon");
-  const burger = document.querySelector(".burger");
-
+  const burgerLogo = document.querySelector(".burger");
   const currentTheme = localStorage.getItem("theme");
+  const isMainPage =
+    window.location.pathname === "/" ||
+    window.location.pathname.endsWith("index.html");
 
+  // Define paths for the images based on the theme and page location
+  const getPaths = (theme, isMainPage) => {
+    const basePath = isMainPage ? "./image/" : "../image/";
+    return {
+      mainLogo:
+        theme === "light"
+          ? `${basePath}header/nethammer-logo-light.png`
+          : `${basePath}header/nethammer-logo.png`,
+      footerLogo:
+        theme === "light"
+          ? `${basePath}footer/nethammer-blue-logo.png`
+          : `${basePath}footer/nethammer-white-logo.png`,
+      burgerLogo:
+        theme === "light"
+          ? `${basePath}header/burger.svg`
+          : `${basePath}header/burger-dark.svg`,
+    };
+  };
+
+  // Function to change images with a smooth transition
+  const changeImage = (imgElement, newSrc) => {
+    imgElement.style.opacity = 0; // Fade out
+    setTimeout(() => {
+      imgElement.src = newSrc;
+      imgElement.style.opacity = 1; // Fade in
+    }, 300); // Match the duration of the CSS transition
+  };
+
+  // Function to change all images based on the theme
+  const changeImages = (theme) => {
+    const paths = getPaths(theme, isMainPage);
+    changeImage(mainLogo, paths.mainLogo);
+    changeImage(footerLogo, paths.footerLogo);
+    changeImage(burgerLogo, paths.burgerLogo);
+  };
+
+  // Initial theme setup
   if (currentTheme === "light") {
     document.body.classList.add("light-mode");
-    logo.src = "../image/header/nethammer-logo-light.png";
-    footerLogo.src = "../image/footer/nethammer-blue-logo.png";
-    burger.src = "../image/header/burger.svg";
+    changeImages("light");
   }
 
+  // Event listener for theme toggle
   toggleButton.addEventListener("click", () => {
     document.body.classList.toggle("light-mode");
-    let theme = "dark";
-    if (document.body.classList.contains("light-mode")) {
-      theme = "light";
-      logo.src = "../image/header/nethammer-logo-light.png";
-      footerLogo.src = "../image/footer/nethammer-blue-logo.png";
-      burger.src = "../image/header/burger.svg";
-    } else {
-      logo.src = "../image/header/nethammer-logo.png";
-      footerLogo.src = "../image/footer/nethammer-white-logo.png";
-      burger.src = "../image/header/burger-dark.svg";
-    }
+    const theme = document.body.classList.contains("light-mode")
+      ? "light"
+      : "dark";
+    changeImages(theme);
     localStorage.setItem("theme", theme);
   });
 
@@ -35,6 +66,80 @@ document.addEventListener("DOMContentLoaded", () => {
     toggleButton.classList.toggle("active");
   });
 });
+
+// Смена логина только
+
+// document.addEventListener("DOMContentLoaded", () => {
+//   const toggleButton = document.querySelector(".header__switch");
+//   const logo = document.querySelector(".header__logo");
+//   const footerLogo = document.querySelector(".footer__icon");
+//   const burger = document.querySelector(".burger");
+//   const currentTheme = localStorage.getItem("theme");
+//   const isMainPage =
+//     window.location.pathname === "/" ||
+//     window.location.pathname.endsWith("index.html");
+
+//   const getLogoPath = (theme, isMainPage) => {
+//     if (isMainPage) {
+//       return theme === "light"
+//         ? "./image/header/nethammer-logo-light.png"
+//         : "./image/header/nethammer-logo.png";
+//     } else {
+//       return theme === "light"
+//         ? "../image/header/nethammer-logo-light.png"
+//         : "../image/header/nethammer-logo.png";
+//     }
+//   };
+
+//   const changeLogo = (theme) => {
+//     logo.style.opacity = 0; // Fade out
+//     setTimeout(() => {
+//       logo.src = getLogoPath(theme, isMainPage);
+//       logo.style.opacity = 1; // Fade in
+//     }, 300); // Match the duration of the CSS transition
+//   };
+
+//   if (currentTheme === "light") {
+//     document.body.classList.add("light-mode");
+//     changeLogo("light");
+//   }
+
+//   toggleButton.addEventListener("click", () => {
+//     document.body.classList.toggle("light-mode");
+//     const theme = document.body.classList.contains("light-mode")
+//       ? "light"
+//       : "dark";
+//     changeLogo(theme);
+//     localStorage.setItem("theme", theme);
+//   });
+
+// if (currentTheme === "light") {
+//   document.body.classList.add("light-mode");
+//   logo.src = "../image/header/nethammer-logo-light.png";
+//   footerLogo.src = "../image/footer/nethammer-blue-logo.png";
+//   burger.src = "../image/header/burger.svg";
+// }
+
+// toggleButton.addEventListener("click", () => {
+//   document.body.classList.toggle("light-mode");
+//   let theme = "dark";
+//   if (document.body.classList.contains("light-mode")) {
+//     theme = "light";
+//     logo.src = "                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      image/header/nethammer-logo-light.png";
+//     footerLogo.src = "../image/footer/nethammer-blue-logo.png";
+//     burger.src = "../image/header/burger.svg";
+//   } else {
+//     logo.src = "../image/header/nethammer-logo.png";
+//     footerLogo.src = "../image/footer/nethammer-white-logo.png";
+//     burger.src = "../image/header/burger-dark.svg";
+//   }
+//   localStorage.setItem("theme", theme);
+// });
+
+// toggleButton.addEventListener("click", () => {
+//   toggleButton.classList.toggle("active");
+// });
+// });
 
 //Tabs
 
