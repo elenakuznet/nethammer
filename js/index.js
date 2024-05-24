@@ -145,7 +145,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
 const serviceItems = document.querySelectorAll(".services__item");
 const serviceContent = document.querySelectorAll(".services__info-wrapper");
-console.log(serviceContent);
 
 function removeAll() {
   serviceItems.forEach((item, index) => {
@@ -161,6 +160,27 @@ serviceItems.forEach((item, index) => {
     item.classList.add("services__item-active");
   });
 });
+
+// Tabs for vacancies
+
+const jobTabs = document.querySelectorAll(".job__tab");
+const jobContents = document.querySelectorAll(".job__tab-content");
+console.log(jobTabs);
+
+function removeAll() {
+  jobTabs.forEach((tab, index) => {
+    tab.classList.remove("tab-active");
+    jobContents[index].classList.remove("content-active");
+  });
+}
+
+jobTabs.forEach((tab, index) =>
+  tab.addEventListener("click", () => {
+    removeAll();
+    tab.classList.add("tab-active");
+    jobContents[index].classList.add("content-active");
+  })
+);
 
 // Swiper
 

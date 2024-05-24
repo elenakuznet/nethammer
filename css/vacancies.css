@@ -58,6 +58,21 @@
   line-height: 83%;
   letter-spacing: -0.03em;
   color: #151515;
+  margin-bottom: 25px;
+}
+
+.job__figcaption {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.44444;
+  letter-spacing: -0.03em;
+  text-transform: capitalize;
+  color: #0587ff;
+}
+
+.job-bonuses__list {
+  list-style-type: disc;
+  padding-left: 20px;
 }
 
 .job__image {

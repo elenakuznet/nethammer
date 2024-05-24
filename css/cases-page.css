@@ -6,6 +6,8 @@
 }
 
 .breadcrumb__icon {
+  width: 20px;
+  height: 20px;
   background-image: url(../image/home-icon.svg);
   margin-right: 10px;
 }
@@ -87,7 +89,7 @@ body.light-mode .breadcrumb__icon {
   line-height: 150%;
   letter-spacing: -0.03em;
   text-align: right;
-  color: #fff;
+  /* color: #fff; */
   padding-top: 5px;
 }
 
