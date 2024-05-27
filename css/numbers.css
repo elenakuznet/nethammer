@@ -25,6 +25,11 @@
 
 .numbers__item {
   text-align: center;
+  width: 128px;
+}
+
+.numbers__item--big {
+  width: 251px;
 }
 
 .numbers__subtitle {

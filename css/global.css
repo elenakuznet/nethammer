@@ -50,7 +50,22 @@ body {
   line-height: 30px; /* 150% */
   background-color: #000623;
   transition: all 0.3s ease-in-out;
+
+  /* cursor: none;  */
 }
+
+/* .cursor {
+  position: absolute;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  transition: transform 0.1s ease;
+  z-index: 1000;
+  background-image: url(../image/banner/scroll.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 36px;
+  height: 55px;
+}  */
 
 body.light-mode {
   background-color: white;
@@ -110,6 +125,14 @@ fieldset {
   margin: 0 auto;
 }
 
+.section__title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.25;
+  letter-spacing: -0.03em;
+  color: #0587ff;
+}
+
 .section__subtitle {
   font-weight: 500;
   font-size: 16px;
@@ -118,4 +141,12 @@ fieldset {
   text-transform: uppercase;
   color: #0587ff;
   margin-bottom: 5px;
+}
+
+body.light-mode .section__subtitle {
+  color: #151515;
+}
+
+body.light-mode .section__title {
+  color: #0587ff;
 }

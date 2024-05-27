@@ -23,6 +23,7 @@
   letter-spacing: -0.03em;
   color: rgba(21, 21, 21, 0.7);
   cursor: pointer;
+  transition: all 0.3s ease-in 0s;
 }
 
 .tab-active {

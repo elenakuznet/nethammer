@@ -110,7 +110,7 @@
               <img class="banner__phone" src="image/Phone.png" alt="" /> -->
             </div>
           </div>
-          <div class="banner__mouse">
+          <div class="banner__mouse cursor" id="cursor">
             <img src="image/banner/scroll.png" alt="" />
           </div>
         </div>
@@ -128,22 +128,53 @@
             <ul class="numbers__list">
               <li class="numbers__item">
                 <p class="numbers__subtitle">Лет на рынке</p>
-                <p class="numbers__count">15</p>
+                <span
+                  class="numbers__count"
+                  id="num1"
+                  data-num="15"
+                  data-duration="4"
+                >
+                  0
+                </span>
               </li>
 
-              <li class="numbers__item">
+              <li class="numbers__item numbers__item--big">
                 <p class="numbers__subtitle">Проектов реализовано</p>
-                <p class="numbers__count">1100+</p>
+                <span
+                  class="numbers__count"
+                  id="num2"
+                  data-num="1100"
+                  data-suffix="+"
+                  data-duration="6"
+                >
+                  0
+                </span>
               </li>
 
               <li class="numbers__item">
                 <p class="numbers__subtitle">Сотрудников</p>
-                <p class="numbers__count">50+</p>
+                <span
+                  class="numbers__count"
+                  id="num3"
+                  data-num="50"
+                  data-suffix="+"
+                  data-duration="5"
+                >
+                  0
+                </span>
               </li>
 
-              <li class="numbers__item">
+              <li class="numbers__item numbers__item--big">
                 <p class="numbers__subtitle">Проектов реализовано</p>
-                <p class="numbers__count">1100+</p>
+                <span
+                  class="numbers__count"
+                  id="num4"
+                  data-num="1100"
+                  data-duration="6"
+                  data-suffix="+"
+                >
+                  0
+                </span>
               </li>
             </ul>
           </div>
@@ -460,99 +491,73 @@
         <div class="container">
           <h3 class="work__subtitle">Как мы работаем</h3>
           <h2 class="work__title">Модели работы</h2>
-          <div class="slider">
-            <div class="slider__wrapper">
-              <div class="swiper">
-                <div class="swiper-wrapper">
-                  <div class="swiper-slide slide">
-                    <img
-                      class="slide__image"
-                      src="image/work-image.png"
-                      alt=""
-                    />
-                    <h3 class="slide__title">Retainer</h3>
-                    <p class="slide__text">
-                      Подходит для долгосрочных проектов. Собираем команду в
-                      помощь вашему IT-менеджеру.
-                    </p>
-                    <button class="button slide__button">Подробнее</button>
-                  </div>
+          <div class="slider__wrapper">
+            <div class="swiper work__slider">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide slide">
+                  <img class="slide__image" src="image/work-image.png" alt="" />
+                  <h3 class="slide__title">Retainer</h3>
+                  <p class="slide__text">
+                    Подходит для долгосрочных проектов. Собираем команду в
+                    помощь вашему IT-менеджеру.
+                  </p>
+                  <button class="button slide__button">Подробнее</button>
+                </div>
 
-                  <div class="swiper-slide slide">
-                    <img
-                      class="slide__image"
-                      src="image/work-image.png"
-                      alt=""
-                    />
-                    <h3 class="slide__title">Time &amp Material</h3>
-                    <p class="slide__text slide__text--time">
-                      Подходит для проектов среднего масштаба.
-                    </p>
-                    <button class="button slide__button">Подробнее</button>
-                  </div>
+                <div class="swiper-slide slide">
+                  <img class="slide__image" src="image/work-image.png" alt="" />
+                  <h3 class="slide__title">Time &amp Material</h3>
+                  <p class="slide__text slide__text--time">
+                    Подходит для проектов среднего масштаба.
+                  </p>
+                  <button class="button slide__button">Подробнее</button>
+                </div>
 
-                  <div class="swiper-slide slide">
-                    <img
-                      class="slide__image"
-                      src="image/work-image.png"
-                      alt=""
-                    />
-                    <h3 class="slide__title">Fix Price</h3>
-                    <p class="slide__text">
-                      Подходит для простых проектов с чётко определённым набором
-                      задач, которые не будут меняться в процессе работы.
-                    </p>
-                    <button class="button slide__button">Подробнее</button>
-                  </div>
+                <div class="swiper-slide slide">
+                  <img class="slide__image" src="image/work-image.png" alt="" />
+                  <h3 class="slide__title">Fix Price</h3>
+                  <p class="slide__text">
+                    Подходит для простых проектов с чётко определённым набором
+                    задач, которые не будут меняться в процессе работы.
+                  </p>
+                  <button class="button slide__button">Подробнее</button>
+                </div>
 
-                  <div class="swiper-slide slide">
-                    <img
-                      class="slide__image"
-                      src="image/work-image.png"
-                      alt=""
-                    />
-                    <h3 class="slide__title">Retainer</h3>
-                    <p class="slide__text">
-                      Подходит для долгосрочных проектов. Собираем команду в
-                      помощь вашему IT-менеджеру.
-                    </p>
-                    <button class="button slide__button">Подробнее</button>
-                  </div>
+                <div class="swiper-slide slide">
+                  <img class="slide__image" src="image/work-image.png" alt="" />
+                  <h3 class="slide__title">Retainer</h3>
+                  <p class="slide__text">
+                    Подходит для долгосрочных проектов. Собираем команду в
+                    помощь вашему IT-менеджеру.
+                  </p>
+                  <button class="button slide__button">Подробнее</button>
+                </div>
 
-                  <div class="swiper-slide slide">
-                    <img
-                      class="slide__image"
-                      src="image/work-image.png"
-                      alt=""
-                    />
-                    <h3 class="slide__title">Time &amp Material</h3>
-                    <p class="slide__text slide__text--time">
-                      Подходит для проектов среднего масштаба.
-                    </p>
-                    <button class="button slide__button">Подробнее</button>
-                  </div>
+                <div class="swiper-slide slide">
+                  <img class="slide__image" src="image/work-image.png" alt="" />
+                  <h3 class="slide__title">Time &amp Material</h3>
+                  <p class="slide__text slide__text--time">
+                    Подходит для проектов среднего масштаба.
+                  </p>
+                  <button class="button slide__button">Подробнее</button>
+                </div>
 
-                  <div class="swiper-slide slide">
-                    <img
-                      class="slide__image"
-                      src="image/work-image.png"
-                      alt=""
-                    />
-                    <h3 class="slide__title">Fix Price</h3>
-                    <p class="slide__text">
-                      Подходит для простых проектов с чётко определённым набором
-                      задач, которые не будут меняться в процессе работы.
-                    </p>
-                    <button class="button slide__button">Подробнее</button>
-                  </div>
+                <div class="swiper-slide slide">
+                  <img class="slide__image" src="image/work-image.png" alt="" />
+                  <h3 class="slide__title">Fix Price</h3>
+                  <p class="slide__text">
+                    Подходит для простых проектов с чётко определённым набором
+                    задач, которые не будут меняться в процессе работы.
+                  </p>
+                  <button class="button slide__button">Подробнее</button>
                 </div>
               </div>
-              <div class="button-right">
-                <img src="image/arrow-right-swiper.svg" alt="" />
-              </div>
-              <div class="button-left">
-                <img src="image/arrow-left.svg" alt="" />
-              </div>
+            </div>
+            <div class="button-right">
+              <img src="image/arrow-right-swiper.svg" alt="" />
+            </div>
+            <div class="button-left">
+              <img src="image/arrow-left.svg" alt="" />
             </div>
           </div>
         </div>
@@ -567,8 +572,10 @@
       <section class="stages">
         <div class="container stages__box">
           <div class="stages__wrapper">
-            <h3 class="stages__subtitle">Этапы сотрудничества</h3>
-            <h2 class="stages__title">
+            <h3 class="stages__subtitle section__subtitle">
+              Этапы сотрудничества
+            </h3>
+            <h2 class="stages__title section__title">
               Погружаем в&nbsp;задачи компании с&nbsp;первой встречи
             </h2>
             <button class="button stages__button">
@@ -645,8 +652,8 @@
       />
       <section class="clients">
         <div class="container">
-          <h3 class="clients__subtitle">Наши клиенты</h3>
-          <h2 class="clients__title">
+          <h3 class="clients__subtitle section__subtitle">Наши клиенты</h3>
+          <h2 class="clients__title section__title">
             Компании, которые уже сотрудничают с нами
           </h2>
           <ul class="clients__list">
@@ -870,6 +877,7 @@
         <p class="footer__copyright"><a>nethammer.ru</a> © 2014-2024</p>
       </div>
     </footer>
+    <script src="js/countUp.min.js"></script>
     <script src="js/inputmask.min.js"></script>
     <script src="js/index.js"></script>
   </body>

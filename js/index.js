@@ -67,6 +67,86 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
+// Custom cursor
+
+document.addEventListener("DOMContentLoaded", (event) => {
+  const cursor = document.getElementById("cursor");
+  let mouseX = 0,
+    mouseY = 0;
+  let posX = 0,
+    posY = 0;
+
+  document.addEventListener("mousemove", (e) => {
+    mouseX = e.pageX;
+    mouseY = e.pageY;
+  });
+
+  function updateCursor() {
+    posX += (mouseX - posX) / 5;
+    posY += (mouseY - posY) / 5;
+    cursor.style.left = posX + "px";
+    cursor.style.top = posY + "px";
+    requestAnimationFrame(updateCursor);
+  }
+
+  requestAnimationFrame(updateCursor);
+});
+
+// Changing numbers
+
+// window.addEventListener("DOMContentLoaded", () => {
+//   // Структура страницы загружена и готова к взаимодействию
+
+//   const count = new CountUp( // задаем необходимые параметры
+//     "num1", // 1. задаём идентификатор элемента с числом
+//     0, // 2. задаём начальное число
+//     15, // 3. задаём конечное число
+//     0, // 4. задаём количество цифр после запятой
+//     4 // 5. задаём продолжительность анимации в секундах
+//   );
+//   count.start(); // запускаем настроенную анимацию
+// });
+
+window.addEventListener("DOMContentLoaded", () => {
+  // Структура страницы загружена и готова к взаимодействию
+
+  const countNums = () => {
+    // объявляем функцию, чтобы всё, что относится к анимированию чисел было в одном месте
+    const numbersObserver = new IntersectionObserver((entries, observer) => {
+      // создаём наблюдатель за элементами, в которых будем увеличивать значение числа
+      entries.forEach((entry) => {
+        // для каждого наблюдаемого элемента
+        if (entry.isIntersecting) {
+          // проверяем, находится ли он в видимой области браузера
+          const count = new CountUp( // настраиваем новую анимацию для числа
+            entry.target.id, // 1. задаём идентификатор элемента с числом
+            0, // 2. задаём начальное число
+            entry.target.dataset.num, // 3. задаём конечное число (берем из data-атрибута)
+            0, // 4. задаём количество цифр после запятой
+            entry.target.dataset.duration || 4, // 5. задаём продолжительность анимации в секундах (если у элемента есть атрибут data-duration, то берём из него значение, иначе назначаем 4 секунды по-умолчанию)
+            {
+              // указываем дополнительные параметры
+              separator: "", // задаём разделитель групп разрядов (например для миллиона - 1 000 000)
+              // prefix: entry.target.dataset.prefix || "", // задаём префикс - любые символы перед числом (берем значение из data-prefix, если не указано - то задаем пустую строку по умолчанию)
+              suffix: entry.target.dataset.suffix || "", // задаём суффикс - любые символы после числа (берем значение из data-suffix, если не указано - то задаем пустую строку по умолчанию)
+            }
+          );
+          count.start(() => {
+            // запускаем настроенную анимацию и по окончании анимации...
+            // entry.target.parentElement.classList.add("numbers__item_done"); // ...добавляем активный класс родительскому элементу
+          });
+          observer.unobserve(entry.target); // отключаем наблюдение за элементом
+        }
+      });
+    });
+    document.querySelectorAll(".numbers__count").forEach((num) => {
+      // ищем элементы за которыми будем наблюдать, и для каждого...
+      numbersObserver.observe(num); // ...запускаем наблюдение
+    });
+  };
+  countNums(); // запускаем объявленную функцию
+});
+
 // Смена логина только
 
 // document.addEventListener("DOMContentLoaded", () => {
@@ -167,7 +247,7 @@ const jobTabs = document.querySelectorAll(".job__tab");
 const jobContents = document.querySelectorAll(".job__tab-content");
 console.log(jobTabs);
 
-function removeAll() {
+function removeAllContent() {
   jobTabs.forEach((tab, index) => {
     tab.classList.remove("tab-active");
     jobContents[index].classList.remove("content-active");
@@ -176,29 +256,43 @@ function removeAll() {
 
 jobTabs.forEach((tab, index) =>
   tab.addEventListener("click", () => {
-    removeAll();
+    removeAllContent();
     tab.classList.add("tab-active");
     jobContents[index].classList.add("content-active");
   })
 );
 
-// Swiper
+// Swiper 1
 
-new Swiper(".swiper", {
+new Swiper(".work__slider", {
   spaceBetween: 20,
   slidesPerView: 3,
   centeredSlides: true,
   loop: true,
+  mousewheel: true,
+  keyboard: true,
 
   // Navigation arrows
   navigation: {
     nextEl: ".button-right",
     prevEl: ".button-left",
   },
+});
 
-  // And if we need scrollbar
-  scrollbar: {
-    el: ".swiper-scrollbar",
+// Swiper 2
+
+new Swiper(".team__slider", {
+  spaceBetween: 20,
+  slidesPerView: 4,
+  // centeredSlides: true,
+  loop: true,
+  mousewheel: true,
+  keyboard: true,
+
+  // Navigation arrows
+  navigation: {
+    nextEl: ".button-next",
+    prevEl: ".button-before",
   },
 });
 

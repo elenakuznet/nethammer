@@ -3,7 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Карточка кейса</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="../css/index.css" />
     <link
       rel="icon"
@@ -11,6 +15,7 @@
       sizes="16x16"
       href="../image/favicon.png"
     />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   </head>
   <body>
     <img class="header__background" src="../image/header-bg.png" alt="" />
@@ -59,7 +64,7 @@
       <section class="case">
         <div class="container">
           <div class="case__title-wrapper">
-            <h2 class="case__title">Название кейса</h2>
+            <h2 class="case__title section__title">Название кейса</h2>
             <button class="button case__button case__button--card">
               Смотреть сайт
               <img class="case__icon" src="../image/arrow-right.svg" alt="" />
@@ -160,21 +165,199 @@
             <h2 class="team__title">Лучшие исполнители</h2>
           </div>
 
-          <div class="team-member">
-            <p class="team-member__title">Full-Stack разработчик</p>
-            <img
-              class="team-member__image"
-              src="../image/team-member.png"
-              alt=""
-            />
-            <div class="team-member__info">
-              <p class="team-member__name">Александр</p>
-              <p class="team-member__text">32+ реализованных проектов</p>
-              <div class="team-member__icons">
-                <img src="../image/php.svg" alt="" />
-                <img src="../image/js.svg" alt="" />
+          <div class="team__members">
+            <div class="swiper team__slider">
+              <!-- Additional required wrapper -->
+              <div class="swiper-wrapper team__members-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide team__slide">
+                  <div class="team-member">
+                    <p class="team-member__title">Full-Stack разработчик</p>
+                    <img
+                      class="team-member__image"
+                      src="../image/team-member.png"
+                      alt=""
+                    />
+                    <div class="team-member__info">
+                      <p class="team-member__name">Александр</p>
+                      <p class="team-member__text">
+                        32+ реализованных проектов
+                      </p>
+                      <div class="team-member__icons">
+                        <img src="../image/php.svg" alt="" />
+                        <img src="../image/js.svg" alt="" />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide team__slide">
+                  <div class="team-member">
+                    <p class="team-member__title">Full-Stack разработчик</p>
+                    <img
+                      class="team-member__image"
+                      src="../image/team-member.png"
+                      alt=""
+                    />
+                    <div class="team-member__info">
+                      <p class="team-member__name">Александр</p>
+                      <p class="team-member__text">
+                        32+ реализованных проектов
+                      </p>
+                      <div class="team-member__icons">
+                        <img src="../image/php.svg" alt="" />
+                        <img src="../image/js.svg" alt="" />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide team__slide">
+                  <div class="team-member">
+                    <p class="team-member__title">Full-Stack разработчик</p>
+                    <img
+                      class="team-member__image"
+                      src="../image/team-member.png"
+                      alt=""
+                    />
+                    <div class="team-member__info">
+                      <p class="team-member__name">Александр</p>
+                      <p class="team-member__text">
+                        32+ реализованных проектов
+                      </p>
+                      <div class="team-member__icons">
+                        <img src="../image/php.svg" alt="" />
+                        <img src="../image/js.svg" alt="" />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide team__slide">
+                  <div class="team-member">
+                    <p class="team-member__title">Full-Stack разработчик</p>
+                    <img
+                      class="team-member__image"
+                      src="../image/team-member.png"
+                      alt=""
+                    />
+                    <div class="team-member__info">
+                      <p class="team-member__name">Александр</p>
+                      <p class="team-member__text">
+                        32+ реализованных проектов
+                      </p>
+                      <div class="team-member__icons">
+                        <img src="../image/php.svg" alt="" />
+                        <img src="../image/js.svg" alt="" />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="swiper-slide team__slide">
+                  <div class="team-member">
+                    <p class="team-member__title">Full-Stack разработчик</p>
+                    <img
+                      class="team-member__image"
+                      src="../image/team-member.png"
+                      alt=""
+                    />
+                    <div class="team-member__info">
+                      <p class="team-member__name">Александр</p>
+                      <p class="team-member__text">
+                        32+ реализованных проектов
+                      </p>
+                      <div class="team-member__icons">
+                        <img src="../image/php.svg" alt="" />
+                        <img src="../image/js.svg" alt="" />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="swiper-slide team__slide">
+                  <div class="team-member">
+                    <p class="team-member__title">Full-Stack разработчик</p>
+                    <img
+                      class="team-member__image"
+                      src="../image/team-member.png"
+                      alt=""
+                    />
+                    <div class="team-member__info">
+                      <p class="team-member__name">Александр</p>
+                      <p class="team-member__text">
+                        32+ реализованных проектов
+                      </p>
+                      <div class="team-member__icons">
+                        <img src="../image/php.svg" alt="" />
+                        <img src="../image/js.svg" alt="" />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="swiper-slide team__slide">
+                  <div class="team-member">
+                    <p class="team-member__title">Full-Stack разработчик</p>
+                    <img
+                      class="team-member__image"
+                      src="../image/team-member.png"
+                      alt=""
+                    />
+                    <div class="team-member__info">
+                      <p class="team-member__name">Александр</p>
+                      <p class="team-member__text">
+                        32+ реализованных проектов
+                      </p>
+                      <div class="team-member__icons">
+                        <img src="../image/php.svg" alt="" />
+                        <img src="../image/js.svg" alt="" />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="swiper-slide team__slide">
+                  <div class="team-member">
+                    <p class="team-member__title">Full-Stack разработчик</p>
+                    <img
+                      class="team-member__image"
+                      src="../image/team-member.png"
+                      alt=""
+                    />
+                    <div class="team-member__info">
+                      <p class="team-member__name">Александр</p>
+                      <p class="team-member__text">
+                        32+ реализованных проектов
+                      </p>
+                      <div class="team-member__icons">
+                        <img src="../image/php.svg" alt="" />
+                        <img src="../image/js.svg" alt="" />
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
+            <div class="button-next">
+              <img src="../image/arrow-right-swiper.svg" alt="" />
+            </div>
+            <div class="button-before">
+              <img src="../image/arrow-left.svg" alt="" />
+            </div>
+            <!-- <div class="team-member">
+              <p class="team-member__title">Full-Stack разработчик</p>
+              <img
+                class="team-member__image"
+                src="../image/team-member.png"
+                alt=""
+              />
+              <div class="team-member__info">
+                <p class="team-member__name">Александр</p>
+                <p class="team-member__text">32+ реализованных проектов</p>
+                <div class="team-member__icons">
+                  <img src="../image/php.svg" alt="" />
+                  <img src="../image/js.svg" alt="" />
+                </div>
+              </div>
+            </div> -->
           </div>
         </div>
       </section>
@@ -321,7 +504,7 @@
               <a class="nav__link" href="./contacts.html">Контакты</a>
             </li>
           </ul>
-          <button class="button footer__button">Стать клиентом</button>
+          <button class="button footer__button">+ Стать клиентом</button>
         </div>
         <ul class="footer__list">
           <li class="footer__item">
