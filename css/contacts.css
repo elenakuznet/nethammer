@@ -151,6 +151,10 @@
   background-size: 50% 50%;
 }
 
+body.light-mode .custom-checkbox + label::before {
+  border: 1px solid #adb5bd;
+}
+
 .custom-checkbox:checked + label::before {
   /* border-color: #0b76ef;
   background-color: #0b76ef; */

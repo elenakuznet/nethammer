@@ -88,4 +88,5 @@
 .requisites__arrow {
   width: 39px;
   height: 21px;
+  cursor: pointer;
 }

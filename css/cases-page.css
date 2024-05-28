@@ -1,4 +1,4 @@
-.breadcrumb__wrap {
+/* .breadcrumb__wrap {
   display: flex;
   align-items: flex-start;
   height: 20px;
@@ -18,7 +18,7 @@ body.light-mode .breadcrumb__icon {
 
 .breadcrumb {
   /* color: white; */
-  display: flex;
+/* display: flex;
   line-height: 20px;
   margin-bottom: 30px;
 }
@@ -31,6 +31,59 @@ body.light-mode .breadcrumb__icon {
 
 .breadcrumb__item--last {
   color: #0587ff;
+} */
+
+.breadcrumb__wrap {
+  display: flex;
+  align-items: flex-start;
+  height: 20px;
+  margin-top: -8px;
+  /* color: rgba(255, 255, 255, 0.6); */
+}
+
+.breadcrumb__icon {
+  width: 20px;
+  height: 20px;
+  background-image: url(../image/home-icon.svg);
+  margin-right: 10px;
+}
+
+body.light-mode .breadcrumb__icon {
+  background-image: url(../image/home-dark.png);
+}
+
+.breadcrumb {
+  display: flex;
+  line-height: 20px;
+  margin-bottom: 30px;
+}
+
+.breadcrumb__item + .breadcrumb__item::before {
+  padding: 8px;
+  content: "/\00a0";
+  /* color: black; Ensures the color of the slash is black */
+  color: rgba(255, 255, 255, 0.6);
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.breadcrumb__item {
+  font-weight: 400;
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+body.light-mode .breadcrumb__item:not(:last-child) {
+  color: black;
+}
+
+body.light-mode .breadcrumb__item + .breadcrumb__item::before {
+  color: black;
+}
+
+.breadcrumb__item--last {
+  font-weight: 500;
+  color: #0587ff; /* Blue color for the last item */
 }
 
 /* Отображение элементов списка бок о бок */

@@ -130,7 +130,7 @@ fieldset {
   font-size: 36px;
   line-height: 1.25;
   letter-spacing: -0.03em;
-  color: #0587ff;
+  /* color: #0587ff; */
 }
 
 .section__subtitle {

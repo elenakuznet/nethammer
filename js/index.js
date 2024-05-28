@@ -94,19 +94,6 @@ document.addEventListener("DOMContentLoaded", (event) => {
 
 // Changing numbers
 
-// window.addEventListener("DOMContentLoaded", () => {
-//   // Структура страницы загружена и готова к взаимодействию
-
-//   const count = new CountUp( // задаем необходимые параметры
-//     "num1", // 1. задаём идентификатор элемента с числом
-//     0, // 2. задаём начальное число
-//     15, // 3. задаём конечное число
-//     0, // 4. задаём количество цифр после запятой
-//     4 // 5. задаём продолжительность анимации в секундах
-//   );
-//   count.start(); // запускаем настроенную анимацию
-// });
-
 window.addEventListener("DOMContentLoaded", () => {
   // Структура страницы загружена и готова к взаимодействию
 
@@ -146,80 +133,6 @@ window.addEventListener("DOMContentLoaded", () => {
   };
   countNums(); // запускаем объявленную функцию
 });
-
-// Смена логина только
-
-// document.addEventListener("DOMContentLoaded", () => {
-//   const toggleButton = document.querySelector(".header__switch");
-//   const logo = document.querySelector(".header__logo");
-//   const footerLogo = document.querySelector(".footer__icon");
-//   const burger = document.querySelector(".burger");
-//   const currentTheme = localStorage.getItem("theme");
-//   const isMainPage =
-//     window.location.pathname === "/" ||
-//     window.location.pathname.endsWith("index.html");
-
-//   const getLogoPath = (theme, isMainPage) => {
-//     if (isMainPage) {
-//       return theme === "light"
-//         ? "./image/header/nethammer-logo-light.png"
-//         : "./image/header/nethammer-logo.png";
-//     } else {
-//       return theme === "light"
-//         ? "../image/header/nethammer-logo-light.png"
-//         : "../image/header/nethammer-logo.png";
-//     }
-//   };
-
-//   const changeLogo = (theme) => {
-//     logo.style.opacity = 0; // Fade out
-//     setTimeout(() => {
-//       logo.src = getLogoPath(theme, isMainPage);
-//       logo.style.opacity = 1; // Fade in
-//     }, 300); // Match the duration of the CSS transition
-//   };
-
-//   if (currentTheme === "light") {
-//     document.body.classList.add("light-mode");
-//     changeLogo("light");
-//   }
-
-//   toggleButton.addEventListener("click", () => {
-//     document.body.classList.toggle("light-mode");
-//     const theme = document.body.classList.contains("light-mode")
-//       ? "light"
-//       : "dark";
-//     changeLogo(theme);
-//     localStorage.setItem("theme", theme);
-//   });
-
-// if (currentTheme === "light") {
-//   document.body.classList.add("light-mode");
-//   logo.src = "../image/header/nethammer-logo-light.png";
-//   footerLogo.src = "../image/footer/nethammer-blue-logo.png";
-//   burger.src = "../image/header/burger.svg";
-// }
-
-// toggleButton.addEventListener("click", () => {
-//   document.body.classList.toggle("light-mode");
-//   let theme = "dark";
-//   if (document.body.classList.contains("light-mode")) {
-//     theme = "light";
-//     logo.src = "                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      image/header/nethammer-logo-light.png";
-//     footerLogo.src = "../image/footer/nethammer-blue-logo.png";
-//     burger.src = "../image/header/burger.svg";
-//   } else {
-//     logo.src = "../image/header/nethammer-logo.png";
-//     footerLogo.src = "../image/footer/nethammer-white-logo.png";
-//     burger.src = "../image/header/burger-dark.svg";
-//   }
-//   localStorage.setItem("theme", theme);
-// });
-
-// toggleButton.addEventListener("click", () => {
-//   toggleButton.classList.toggle("active");
-// });
-// });
 
 //Tabs
 
