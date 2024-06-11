@@ -132,4 +132,18 @@ body.light-mode .banner {
   left: 50%;
   bottom: 11px;
   transform: translateX(-50%);
+  animation: upAndDown 1.5s infinite;
+}
+
+
+@keyframes upAndDown {
+  0% {
+      transform: translateY(0);
+  }
+  50% {
+      transform: translateY(-40px);
+  }
+  100% {
+      transform: translateY(0);
+  }
 }

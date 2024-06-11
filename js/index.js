@@ -1,13 +1,13 @@
 import { setupThemeSwitch } from "./modules/theme.js";
 import { setupTabs } from "./modules/tabs.js";
-import { setupCustomCursor } from "./modules/customCursor.js";
+// import { setupCustomCursor } from "./modules/customCursor.js";
 import { setupNumberAnimation } from "./modules/numberAnimation.js";
 import { setupSwipers } from "./modules/swiperSetup.js";
 import { setupFormHandling } from "./modules/setupFormHandling.js";
 
 document.addEventListener("DOMContentLoaded", () => {
   setupThemeSwitch();
-  setupCustomCursor();
+  // setupCustomCursor();
   setupNumberAnimation();
   setupTabs();
   setupSwipers();
