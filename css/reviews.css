@@ -22,7 +22,7 @@
   height: 40px;
   position: absolute;
   top: -7%;
-  background-image: url(/image/quotes.png);
+  background-image: url("../image/review/quotes.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
@@ -35,7 +35,7 @@
   position: absolute;
   bottom: -8%;
   right: 1%;
-  background-image: url(/image/review/quotes-down.png);
+  background-image: url("../image/review/quotes-down.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
@@ -48,7 +48,7 @@
   position: absolute;
   bottom: -8%;
   right: 13%;
-  background-image: url(/image/review/quotes-down.png);
+  background-image: url("../image/review/quotes-down.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
