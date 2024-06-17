@@ -9,7 +9,7 @@ export function setupThemeSwitch() {
     window.location.pathname.endsWith("index.html");
 
     const getPaths = (theme, isMainPage) => {
-      const basePath = isMainPage ? "image/" : "../image/";
+      const basePath = isMainPage ? "./image/" : "../image/";
       return {
         mainLogo:
           theme === "light"

@@ -7,13 +7,13 @@
   background-repeat: no-repeat;
   z-index: 20;
   position: relative;
-  /* margin-bottom: 40px; */
   margin-bottom: 73px;
 }
 
 body.light-mode .banner {
   background-image: none;
 }
+
 /* body.dark-mode .banner {
   height: 743px;
   background-image: url("/image/banner__bg.png");
@@ -92,7 +92,7 @@ body.light-mode .banner {
 }
 
 .banner__ipad {
-  background-image: url(../image/iPad.png);
+  background-image: url("../image/iPad.png");
   /* background-size: contain; */
   background-repeat: no-repeat;
   width: 887px;
@@ -117,7 +117,7 @@ body.light-mode .banner {
 }
 
 .banner__phone {
-  background-image: url(../image/Phone.png);
+  background-image: url("../image/Phone.png");
   width: 325px;
   height: 491px;
   position: absolute;
